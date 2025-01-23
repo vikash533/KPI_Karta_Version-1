@@ -24,12 +24,24 @@ public class RegistrationPageTest extends BaseClass {
 //	public void closeBrowser() {
 //		driver.quit();
 //	}
-	@Test
+	@Test(priority=1)
 	public void registrationPageLanding() {
 		Registrationpage registrationpage = new Registrationpage(driver);
 		Actions action = new Actions();
 
 		action.clickOnElement(registrationpage.getCreateAccoutButton());
+		
+	}
+	@Test(priority=2)
+	public void AddRegistrationWithoutData() {
+		
+		Registrationpage registrationpage = new Registrationpage(driver);
+		Actions action = new Actions();
+		
+		action.clickOnElement(registrationpage.getBtnNext());
+		
+		
+		
 		
 		
 	}
