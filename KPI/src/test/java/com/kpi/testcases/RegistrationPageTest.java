@@ -1,6 +1,7 @@
 package com.kpi.testcases;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -39,6 +40,11 @@ public class RegistrationPageTest extends BaseClass {
 		Actions action = new Actions();
 		
 		action.clickOnElement(registrationpage.getBtnNext());
+		
+		boolean flag1 = action.isElementVisible(registrationpage.getErrMsgNameFull());
+		Assert.assertTrue(flag1);
+		Assert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgNameFull()),prop.getProperty("errorMsgFullName"),"full name error is not matched");
+		
 		
 		
 		

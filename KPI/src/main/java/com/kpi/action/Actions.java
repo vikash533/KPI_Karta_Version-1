@@ -16,9 +16,28 @@ public class Actions {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-		finally{
-			System.out.print("Click onElement method executed");
-		}
+		
 	}
+	
+	public boolean isElementVisible(WebElement element) {
+		try {
+			boolean flag = element.isDisplayed();
+			if(flag==true)
+				return flag;
+				
+		}catch(NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
+	
+	public String isElementvisibleTrue(WebElement element) {
+		try {element.isDisplayed();}
+		catch(NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		return element.getText();
+	} 
 
 }

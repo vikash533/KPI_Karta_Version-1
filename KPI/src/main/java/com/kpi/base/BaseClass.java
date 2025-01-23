@@ -16,14 +16,18 @@ public class BaseClass {
 	public WebDriver driver;
 	public Properties prop;
 	public FileInputStream fis;
+	public FileInputStream fis1;
 
 	public WebDriver openBrowser() {
 
 		String fileLocation = System.getProperty("user.dir") + "//src/main/resources/config.properties";
+		String fileLocation1 = System.getProperty("user.dir")+"//src/main/resources/Configuration.properties";
 		try {
 			fis = new FileInputStream(fileLocation);
+			fis1 = new FileInputStream(fileLocation1);
 			prop = new Properties();
 			prop.load(fis);
+			prop.load(fis1);
 			String Browser = prop.getProperty("Browser");
 			if (Browser.equalsIgnoreCase("chrome")) {
 				driver = new ChromeDriver();
