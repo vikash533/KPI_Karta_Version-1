@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-24T01:58:00 IST" name="Default suite" finished-at="2025-01-24T01:58:10 IST" duration-ms="9146">
+    <groups>
+    </groups>
+    <test started-at="2025-01-24T01:58:00 IST" name="Default test" finished-at="2025-01-24T01:58:10 IST" duration-ms="9146">
+      <class name="com.kpi.testcases.RegistrationPageTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@ba2f4ec]" started-at="2025-01-24T01:58:00 IST" name="launchBrowser" finished-at="2025-01-24T01:58:09 IST" duration-ms="8725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="registrationPageLanding()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@ba2f4ec]" started-at="2025-01-24T01:58:09 IST" name="registrationPageLanding" finished-at="2025-01-24T01:58:10 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageLanding -->
+      </class> <!-- com.kpi.testcases.RegistrationPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

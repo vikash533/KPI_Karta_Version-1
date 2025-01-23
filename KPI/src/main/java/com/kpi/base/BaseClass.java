@@ -14,13 +14,15 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class BaseClass {
 	public WebDriver driver;
+	public Properties prop;
+	public FileInputStream fis;
 
 	public WebDriver openBrowser() {
 
-		String fileLocation = System.getProperty("user.dir") + "//src/main/java/config.properties";
+		String fileLocation = System.getProperty("user.dir") + "//src/main/resources/config.properties";
 		try {
-			FileInputStream fis = new FileInputStream(fileLocation);
-			Properties prop = new Properties();
+			fis = new FileInputStream(fileLocation);
+			prop = new Properties();
 			prop.load(fis);
 			String Browser = prop.getProperty("Browser");
 			if (Browser.equalsIgnoreCase("chrome")) {

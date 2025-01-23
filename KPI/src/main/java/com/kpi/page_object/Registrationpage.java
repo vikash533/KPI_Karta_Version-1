@@ -123,8 +123,320 @@ public class Registrationpage {
 	@FindBy(xpath ="(//p[@class='text-white'])[1]")
 	public WebElement lableBacktoLogin;
 	
-//	@FindBy(linkText() = "a[href='/login']")
-//	public WebElement btnBacktoLogin;
+	@FindBy(linkText = "a[href='/login']")
+	public WebElement btnBacktoLogin;
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public void setDriver(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public WebElement getCreateAccoutButton() {
+		return createAccoutButton;
+	}
+
+	public void setCreateAccoutButton(WebElement createAccoutButton) {
+		this.createAccoutButton = createAccoutButton;
+	}
+
+	public WebElement getLableSignup() {
+		return lableSignup;
+	}
+
+	public void setLableSignup(WebElement lableSignup) {
+		this.lableSignup = lableSignup;
+	}
+
+	public WebElement getLableFullName() {
+		return lableFullName;
+	}
+
+	public void setLableFullName(WebElement lableFullName) {
+		this.lableFullName = lableFullName;
+	}
+
+	public WebElement getTxtFullname() {
+		return txtFullname;
+	}
+
+	public void setTxtFullname(WebElement txtFullname) {
+		this.txtFullname = txtFullname;
+	}
+
+	public WebElement getErrMsgNameFull() {
+		return errMsgNameFull;
+	}
+
+	public void setErrMsgNameFull(WebElement errMsgNameFull) {
+		this.errMsgNameFull = errMsgNameFull;
+	}
+
+	public WebElement getLableEmail() {
+		return lableEmail;
+	}
+
+	public void setLableEmail(WebElement lableEmail) {
+		this.lableEmail = lableEmail;
+	}
+
+	public WebElement getTxtEmail() {
+		return txtEmail;
+	}
+
+	public void setTxtEmail(WebElement txtEmail) {
+		this.txtEmail = txtEmail;
+	}
+
+	public WebElement getErrMsgEmail() {
+		return errMsgEmail;
+	}
+
+	public void setErrMsgEmail(WebElement errMsgEmail) {
+		this.errMsgEmail = errMsgEmail;
+	}
+
+	public WebElement getLablePassword() {
+		return lablePassword;
+	}
+
+	public void setLablePassword(WebElement lablePassword) {
+		this.lablePassword = lablePassword;
+	}
+
+	public WebElement getTxtPassword() {
+		return txtPassword;
+	}
+
+	public void setTxtPassword(WebElement txtPassword) {
+		this.txtPassword = txtPassword;
+	}
+
+	public WebElement getErrMsgPassword() {
+		return errMsgPassword;
+	}
+
+	public void setErrMsgPassword(WebElement errMsgPassword) {
+		this.errMsgPassword = errMsgPassword;
+	}
+
+	public WebElement getLenghtMsgPassword() {
+		return lenghtMsgPassword;
+	}
+
+	public void setLenghtMsgPassword(WebElement lenghtMsgPassword) {
+		this.lenghtMsgPassword = lenghtMsgPassword;
+	}
+
+	public WebElement getLableConfPassword() {
+		return lableConfPassword;
+	}
+
+	public void setLableConfPassword(WebElement lableConfPassword) {
+		this.lableConfPassword = lableConfPassword;
+	}
+
+	public WebElement getTxtConfPassword() {
+		return txtConfPassword;
+	}
+
+	public void setTxtConfPassword(WebElement txtConfPassword) {
+		this.txtConfPassword = txtConfPassword;
+	}
+
+	public WebElement getErrMsgConfPassword() {
+		return errMsgConfPassword;
+	}
+
+	public void setErrMsgConfPassword(WebElement errMsgConfPassword) {
+		this.errMsgConfPassword = errMsgConfPassword;
+	}
+
+	public WebElement getLenghtMsgConfPassword() {
+		return lenghtMsgConfPassword;
+	}
+
+	public void setLenghtMsgConfPassword(WebElement lenghtMsgConfPassword) {
+		this.lenghtMsgConfPassword = lenghtMsgConfPassword;
+	}
+
+	public WebElement getPasswordMismatchAlert() {
+		return passwordMismatchAlert;
+	}
+
+	public void setPasswordMismatchAlert(WebElement passwordMismatchAlert) {
+		this.passwordMismatchAlert = passwordMismatchAlert;
+	}
+
+	public WebElement getLableMobile() {
+		return lableMobile;
+	}
+
+	public void setLableMobile(WebElement lableMobile) {
+		this.lableMobile = lableMobile;
+	}
+
+	public WebElement getTxtMobile() {
+		return txtMobile;
+	}
+
+	public void setTxtMobile(WebElement txtMobile) {
+		this.txtMobile = txtMobile;
+	}
+
+	public WebElement getErrMsgMobile() {
+		return errMsgMobile;
+	}
+
+	public void setErrMsgMobile(WebElement errMsgMobile) {
+		this.errMsgMobile = errMsgMobile;
+	}
+
+	public WebElement getBtnCountryCode() {
+		return btnCountryCode;
+	}
+
+	public void setBtnCountryCode(WebElement btnCountryCode) {
+		this.btnCountryCode = btnCountryCode;
+	}
+
+	public WebElement getTxtSearchPlaceholder() {
+		return txtSearchPlaceholder;
+	}
+
+	public void setTxtSearchPlaceholder(WebElement txtSearchPlaceholder) {
+		this.txtSearchPlaceholder = txtSearchPlaceholder;
+	}
+
+	public WebElement getListCountry() {
+		return listCountry;
+	}
+
+	public void setListCountry(WebElement listCountry) {
+		this.listCountry = listCountry;
+	}
+
+	public WebElement getListCountryflag() {
+		return listCountryflag;
+	}
+
+	public void setListCountryflag(WebElement listCountryflag) {
+		this.listCountryflag = listCountryflag;
+	}
+
+	public WebElement getListCountryName() {
+		return listCountryName;
+	}
+
+	public void setListCountryName(WebElement listCountryName) {
+		this.listCountryName = listCountryName;
+	}
+
+	public WebElement getListCountryCode() {
+		return listCountryCode;
+	}
+
+	public void setListCountryCode(WebElement listCountryCode) {
+		this.listCountryCode = listCountryCode;
+	}
+
+	public WebElement getLableOrg() {
+		return lableOrg;
+	}
+
+	public void setLableOrg(WebElement lableOrg) {
+		this.lableOrg = lableOrg;
+	}
+
+	public WebElement getTxtOrgName() {
+		return txtOrgName;
+	}
+
+	public void setTxtOrgName(WebElement txtOrgName) {
+		this.txtOrgName = txtOrgName;
+	}
+
+	public WebElement getErrMsgOrg() {
+		return errMsgOrg;
+	}
+
+	public void setErrMsgOrg(WebElement errMsgOrg) {
+		this.errMsgOrg = errMsgOrg;
+	}
+
+	public WebElement getLableJobTitle() {
+		return lableJobTitle;
+	}
+
+	public void setLableJobTitle(WebElement lableJobTitle) {
+		this.lableJobTitle = lableJobTitle;
+	}
+
+	public WebElement getTxtJobTitle() {
+		return txtJobTitle;
+	}
+
+	public void setTxtJobTitle(WebElement txtJobTitle) {
+		this.txtJobTitle = txtJobTitle;
+	}
+
+	public WebElement getErrMsgJobTitle() {
+		return errMsgJobTitle;
+	}
+
+	public void setErrMsgJobTitle(WebElement errMsgJobTitle) {
+		this.errMsgJobTitle = errMsgJobTitle;
+	}
+
+	public WebElement getLablecountry() {
+		return lablecountry;
+	}
+
+	public void setLablecountry(WebElement lablecountry) {
+		this.lablecountry = lablecountry;
+	}
+
+	public WebElement getTxtCountry() {
+		return txtCountry;
+	}
+
+	public void setTxtCountry(WebElement txtCountry) {
+		this.txtCountry = txtCountry;
+	}
+
+	public WebElement getErrMsgCountry() {
+		return errMsgCountry;
+	}
+
+	public void setErrMsgCountry(WebElement errMsgCountry) {
+		this.errMsgCountry = errMsgCountry;
+	}
+
+	public WebElement getBtnNext() {
+		return btnNext;
+	}
+
+	public void setBtnNext(WebElement btnNext) {
+		this.btnNext = btnNext;
+	}
+
+	public WebElement getLableBacktoLogin() {
+		return lableBacktoLogin;
+	}
+
+	public void setLableBacktoLogin(WebElement lableBacktoLogin) {
+		this.lableBacktoLogin = lableBacktoLogin;
+	}
+
+	public WebElement getBtnBacktoLogin() {
+		return btnBacktoLogin;
+	}
+
+	public void setBtnBacktoLogin(WebElement btnBacktoLogin) {
+		this.btnBacktoLogin = btnBacktoLogin;
+	}
+	
 	
 
 }
