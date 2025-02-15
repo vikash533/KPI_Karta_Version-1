@@ -24,6 +24,9 @@ public class Registrationpage {
 	@FindBy(id="fullName")
 	public WebElement txtFullname;
 	
+	@FindBy(xpath ="(//div[@class='ng-star-inserted'])[1]")
+	public WebElement blkErrorName;
+	
 	@FindBy(xpath = "//div[contains(text(),'Full name is required!')]")
 	public WebElement errMsgNameFull;
 	
@@ -125,6 +128,7 @@ public class Registrationpage {
 	
 	@FindBy(linkText = "a[href='/login']")
 	public WebElement btnBacktoLogin;
+	
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -161,8 +165,12 @@ public class Registrationpage {
 		return txtFullname;
 	}
 
-	public void setTxtFullname(WebElement txtFullname) {
-		this.txtFullname = txtFullname;
+	public WebElement setTxtFullname() {
+		return txtFullname;
+	}
+	
+	public WebElement getblkErrorName() {
+		return blkErrorName;
 	}
 
 	public WebElement getErrMsgNameFull() {
