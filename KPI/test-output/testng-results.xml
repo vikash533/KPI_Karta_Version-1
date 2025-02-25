@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-16T01:10:39 IST" name="Default suite" finished-at="2025-02-16T01:11:07 IST" duration-ms="27720">
+  <suite started-at="2025-02-26T05:07:53 IST" name="Default suite" finished-at="2025-02-26T05:08:05 IST" duration-ms="12070">
     <groups>
     </groups>
-    <test started-at="2025-02-16T01:10:39 IST" name="Default test" finished-at="2025-02-16T01:11:07 IST" duration-ms="27720">
+    <test started-at="2025-02-26T05:07:53 IST" name="Default test" finished-at="2025-02-26T05:08:05 IST" duration-ms="12070">
       <class name="com.kpi.testcases.RegistrationPageTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@40a4337a]" started-at="2025-02-16T01:10:39 IST" name="launchBrowser" finished-at="2025-02-16T01:10:55 IST" duration-ms="16490" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:07:53 IST" name="launchBrowser" finished-at="2025-02-26T05:08:04 IST" duration-ms="11056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="registrationPageLanding()[pri:1, instance:com.kpi.testcases.RegistrationPageTest@40a4337a]" started-at="2025-02-16T01:10:55 IST" name="registrationPageLanding" finished-at="2025-02-16T01:10:55 IST" duration-ms="132" status="PASS">
+        <test-method signature="registrationPageLanding()[pri:1, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:04 IST" name="registrationPageLanding" finished-at="2025-02-26T05:08:04 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPageLanding -->
-        <test-method signature="lableRegistrationPagefield()[pri:2, instance:com.kpi.testcases.RegistrationPageTest@40a4337a]" started-at="2025-02-16T01:10:55 IST" name="lableRegistrationPagefield" finished-at="2025-02-16T01:10:56 IST" duration-ms="486" status="PASS">
+        <test-method signature="lableRegistrationPagefield()[pri:2, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:04 IST" name="lableRegistrationPagefield" finished-at="2025-02-26T05:08:05 IST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lableRegistrationPagefield -->
-        <test-method signature="addRegistrationWithoutData()[pri:3, instance:com.kpi.testcases.RegistrationPageTest@40a4337a]" started-at="2025-02-16T01:10:56 IST" name="addRegistrationWithoutData" finished-at="2025-02-16T01:10:57 IST" duration-ms="549" status="PASS">
+        <test-method signature="addRegistrationWithoutData()[pri:3, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:05 IST" name="addRegistrationWithoutData" finished-at="2025-02-26T05:08:05 IST" duration-ms="274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addRegistrationWithoutData -->
-        <test-method signature="addBlankSpaceRegField()[pri:4, instance:com.kpi.testcases.RegistrationPageTest@40a4337a]" started-at="2025-02-16T01:10:57 IST" name="addBlankSpaceRegField" finished-at="2025-02-16T01:10:57 IST" duration-ms="4" status="PASS">
+        <test-method signature="addBlankSpaceRegField()[pri:4, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:05 IST" name="addBlankSpaceRegField" finished-at="2025-02-26T05:08:05 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBlankSpaceRegField -->
-        <test-method is-config="true" signature="registrationPageLanding()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@40a4337a]" started-at="2025-02-16T01:10:57 IST" name="registrationPageLanding" finished-at="2025-02-16T01:11:07 IST" duration-ms="10013" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:05 IST" name="closeBrowser" finished-at="2025-02-26T05:08:05 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrationPageLanding -->
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.kpi.testcases.RegistrationPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

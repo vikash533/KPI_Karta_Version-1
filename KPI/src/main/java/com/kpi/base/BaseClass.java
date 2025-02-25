@@ -22,7 +22,9 @@ public class BaseClass {
 
 		String fileLocation = System.getProperty("user.dir") + "//src/main/resources/config.properties";
 		String fileLocation1 = System.getProperty("user.dir")+"//src/main/resources/Configuration.properties";
+		
 		try {
+			
 			fis = new FileInputStream(fileLocation);
 			fis1 = new FileInputStream(fileLocation1);
 			prop = new Properties();

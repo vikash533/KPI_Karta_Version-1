@@ -24,7 +24,7 @@ public class Registrationpage {
 	@FindBy(id="fullName")
 	public WebElement txtFullname;
 	
-	@FindBy(xpath ="(//div[@class='ng-star-inserted'])[1]")
+	@FindBy(xpath ="//div[contains(text(),'Blank space is not allowed!')]")
 	public WebElement blkErrorName;
 	
 	@FindBy(xpath = "//div[contains(text(),'Full name is required!')]")
