@@ -1,33 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-26T05:07:53 IST" name="Default suite" finished-at="2025-02-26T05:08:05 IST" duration-ms="12070">
+  <suite started-at="2025-02-26T19:03:57 IST" name="Default suite" finished-at="2025-02-26T19:04:20 IST" duration-ms="23226">
     <groups>
     </groups>
-    <test started-at="2025-02-26T05:07:53 IST" name="Default test" finished-at="2025-02-26T05:08:05 IST" duration-ms="12070">
+    <test started-at="2025-02-26T19:03:57 IST" name="Default test" finished-at="2025-02-26T19:04:20 IST" duration-ms="23226">
       <class name="com.kpi.testcases.RegistrationPageTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:07:53 IST" name="launchBrowser" finished-at="2025-02-26T05:08:04 IST" duration-ms="11056" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:03:57 IST" name="launchBrowser" finished-at="2025-02-26T19:04:02 IST" duration-ms="4671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="registrationPageLanding()[pri:1, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:04 IST" name="registrationPageLanding" finished-at="2025-02-26T05:08:04 IST" duration-ms="121" status="PASS">
+        <test-method signature="registrationPageLanding()[pri:1, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:02 IST" name="registrationPageLanding" finished-at="2025-02-26T19:04:07 IST" duration-ms="5630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPageLanding -->
-        <test-method signature="lableRegistrationPagefield()[pri:2, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:04 IST" name="lableRegistrationPagefield" finished-at="2025-02-26T05:08:05 IST" duration-ms="368" status="PASS">
+        <test-method signature="lableRegistrationPagefield()[pri:2, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:07 IST" name="lableRegistrationPagefield" finished-at="2025-02-26T19:04:09 IST" duration-ms="1557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lableRegistrationPagefield -->
-        <test-method signature="addRegistrationWithoutData()[pri:3, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:05 IST" name="addRegistrationWithoutData" finished-at="2025-02-26T05:08:05 IST" duration-ms="274" status="PASS">
+        <test-method signature="addRegistrationWithoutData()[pri:3, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:09 IST" name="addRegistrationWithoutData" finished-at="2025-02-26T19:04:10 IST" duration-ms="1079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addRegistrationWithoutData -->
-        <test-method signature="addBlankSpaceRegField()[pri:4, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:05 IST" name="addBlankSpaceRegField" finished-at="2025-02-26T05:08:05 IST" duration-ms="114" status="PASS">
+        <test-method signature="addBlankSpaceRegField()[pri:4, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:10 IST" name="addBlankSpaceRegField" finished-at="2025-02-26T19:04:10 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBlankSpaceRegField -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@5542c4ed]" started-at="2025-02-26T05:08:05 IST" name="closeBrowser" finished-at="2025-02-26T05:08:05 IST" duration-ms="109" status="PASS">
+        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:10 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:12 IST" duration-ms="1879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nitesh Kumar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nitesh123@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3edc#EDC]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3edc#EDC]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[otsSolution]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[QA_SoftwareTesting]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[india]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp -->
+        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:12 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:14 IST" duration-ms="1625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Sharma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit.sharma@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TechCorp]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Automation_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp -->
+        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:14 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:15 IST" duration-ms="1523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Priya Verma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[priya.v@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pass@9876]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pass@9876]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9123456789]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[SoftEdge]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Manual_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp -->
+        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:15 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:17 IST" duration-ms="1895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rahul Singh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahulsingh@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Secure#456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Secure#456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8765432109]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[InfyTech]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DevOps_Engineer]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[UK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp -->
+        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:17 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:19 IST" duration-ms="1906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sneha Mehta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sneha.m@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[QATest@567]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[QATest@567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9654321987]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[CodeSolutions]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Performance_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Australia]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:19 IST" name="closeBrowser" finished-at="2025-02-26T19:04:20 IST" duration-ms="1027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
