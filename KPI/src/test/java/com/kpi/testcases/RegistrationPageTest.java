@@ -4,12 +4,15 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.kpi.action.Actions;
 import com.kpi.base.BaseClass;
 import com.kpi.page_object.Registrationpage;
+
+import utils.DataProviders;
 
 public class RegistrationPageTest extends BaseClass {
 	WebDriver driver;
@@ -84,6 +87,20 @@ public class RegistrationPageTest extends BaseClass {
 		registrationpage = new Registrationpage(driver);
 		registrationpage.setTxtFullname().sendKeys(Keys.SPACE);
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getblkErrorName()), prop.getProperty("blankfullNameError"), "Blank full Name error is not matched");
+	}
+	@DataProvider
+	@Test(priority=5,dataProvider = "registrationData",dataProviderClass = DataProviders.class)
+	public void SignUp(String fullname, String email, String pass, String confirmPass, String num, String organizationName, String jobTitle, String country) {
+		registrationpage = new Registrationpage(driver);
+		 registrationpage.setTxtFullname().sendKeys(fullname);
+	       registrationpage.getTxtEmail().sendKeys(email);
+	        registrationpage.getTxtPassword().sendKeys(pass);  // Fixed incorrect cast
+	        registrationpage.getTxtConfPassword().sendKeys(confirmPass);
+	        registrationpage.getTxtMobile().sendKeys(num);  // No need for CharSequence[]
+	        registrationpage.getTxtOrgName().sendKeys(organizationName);
+	        registrationpage.getTxtJobTitle().sendKeys(jobTitle);
+	        registrationpage.getTxtCountry().sendKeys(country);
+	
 	}
 	
 }

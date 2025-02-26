@@ -6,7 +6,7 @@
       <class name="com.kpi.testcases.RegistrationPageTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="addRegistrationWithoutData"/>
+          <include name="SignUp"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.kpi.testcases.RegistrationPageTest -->
