@@ -5,8 +5,8 @@
     <classes>
       <class name="com.kpi.testcases.RegistrationPageTest">
         <methods>
-          <include name="registrationPageLanding"/>
-          <include name="addBlankSpaceRegField"/>
+          <include name="closeBrowser"/>
+          <include name="addRegistrationWithoutData"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.kpi.testcases.RegistrationPageTest -->
