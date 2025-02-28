@@ -24,7 +24,7 @@ public class Registrationpage {
 	@FindBy(id="fullName")
 	public WebElement txtFullname;
 	
-	@FindBy(xpath ="//div[contains(text(),'Blank space is not allowed!')]")
+	@FindBy(xpath ="//input[@id='fullName']/following-sibling::div[@class='invalid-feedback']")
 	public WebElement blkErrorName;
 	
 	@FindBy(xpath = "//div[contains(text(),'Full name is required!')]")
@@ -38,6 +38,9 @@ public class Registrationpage {
 	
 	@FindBy(xpath = "//div[contains(text(),'Email is required!')]")
 	public WebElement errMsgEmail;
+	
+	@FindBy(xpath = "//div[contains(text(),'Enter a valid email address!')]")
+	public WebElement errMsgInvalidEmail;
 	
 	@FindBy(xpath = "//label[@for = 'password']")
 	public WebElement lablePassword;
@@ -75,6 +78,9 @@ public class Registrationpage {
 	@FindBy(xpath = "//div[contains(text(),'Mobile number is required!')]")
 	public WebElement errMsgMobile;
 	
+	@FindBy(xpath = "//div[contains(text(),'Mobile number is invalid!')]")
+	public WebElement errMsgInvalidMob;
+	
 	@FindBy(xpath="//div[@class='selected-dial-code']")
 	public WebElement btnCountryCode;
 	
@@ -102,6 +108,9 @@ public class Registrationpage {
 	@FindBy(xpath = "//div[contains(text(),'Organization name is required!')]")
 	public WebElement errMsgOrg;
 	
+	@FindBy(xpath = "//input[@id='companyName']/following-sibling::div[@class='invalid-feedback']")
+	public WebElement blkErrorOrg;
+	
 	@FindBy(xpath = "//label[@for ='job_title']")
 	public WebElement lableJobTitle;
 	
@@ -111,6 +120,9 @@ public class Registrationpage {
 	@FindBy(xpath = "//div[contains(text(),'Job title is required!')]")
 	public WebElement errMsgJobTitle;
 	
+	@FindBy(xpath ="//input[@id='job_title']/following-sibling::div[@class='invalid-feedback']")
+	public WebElement blkErrorJobTitle;
+	
 	@FindBy(xpath = "//label[@for ='country']")
 	public WebElement lablecountry;
 	
@@ -119,6 +131,9 @@ public class Registrationpage {
 	
 	@FindBy(xpath = "//div[contains(text(),'Country location is required!')]")
 	public WebElement errMsgCountry;
+	
+	@FindBy(xpath ="//input[@id='country']/following-sibling::div[@class='invalid-feedback']")
+	public WebElement blkErrorCountry;
 	
 	@FindBy(xpath = "//button[@class='btn btn-light btn_default mb-3 mt-5']")
 	public WebElement btnNext;
@@ -203,6 +218,10 @@ public class Registrationpage {
 
 	public void setErrMsgEmail(WebElement errMsgEmail) {
 		this.errMsgEmail = errMsgEmail;
+	}
+	
+	public WebElement geterrMsgInvalidEmail() {
+		return errMsgInvalidEmail;
 	}
 
 	public WebElement getLablePassword() {
@@ -300,6 +319,10 @@ public class Registrationpage {
 	public void setErrMsgMobile(WebElement errMsgMobile) {
 		this.errMsgMobile = errMsgMobile;
 	}
+	
+	public WebElement getErrMsgInvalidMob() {
+		return errMsgInvalidMob;
+	}
 
 	public WebElement getBtnCountryCode() {
 		return btnCountryCode;
@@ -373,6 +396,10 @@ public class Registrationpage {
 		this.errMsgOrg = errMsgOrg;
 	}
 
+	public WebElement getblkErrorOrg() {
+		return blkErrorOrg;
+	}
+	
 	public WebElement getLableJobTitle() {
 		return lableJobTitle;
 	}
@@ -397,6 +424,10 @@ public class Registrationpage {
 		this.errMsgJobTitle = errMsgJobTitle;
 	}
 
+	public WebElement getblkErrorJobTitle() {
+		return blkErrorJobTitle;
+	}
+	
 	public WebElement getLablecountry() {
 		return lablecountry;
 	}
@@ -419,6 +450,10 @@ public class Registrationpage {
 
 	public void setErrMsgCountry(WebElement errMsgCountry) {
 		this.errMsgCountry = errMsgCountry;
+	}
+	
+	public WebElement getblkErrorCountry() {
+		return blkErrorCountry;
 	}
 
 	public WebElement getBtnNext() {
@@ -444,7 +479,4 @@ public class Registrationpage {
 	public void setBtnBacktoLogin(WebElement btnBacktoLogin) {
 		this.btnBacktoLogin = btnBacktoLogin;
 	}
-	
-	
-
 }

@@ -5,8 +5,11 @@
     <classes>
       <class name="com.kpi.testcases.RegistrationPageTest">
         <methods>
+          <include name="btnNextwithoutMobNum" invocation-numbers="0"/>
+          <include name="addBlankSpaceRegField" invocation-numbers="1"/>
           <include name="closeBrowser"/>
-          <include name="SignUp"/>
+          <include name="btnNextwithInvalidEmail" invocation-numbers="0 1"/>
+          <include name="btnNextWithoutEmail" invocation-numbers="1"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.kpi.testcases.RegistrationPageTest -->

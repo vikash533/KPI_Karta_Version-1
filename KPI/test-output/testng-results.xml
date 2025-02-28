@@ -1,79 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="18" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-26T19:03:57 IST" name="Default suite" finished-at="2025-02-26T19:04:20 IST" duration-ms="23226">
+  <suite started-at="2025-03-01T01:50:35 IST" name="Default suite" finished-at="2025-03-01T01:55:14 IST" duration-ms="278996">
     <groups>
     </groups>
-    <test started-at="2025-02-26T19:03:57 IST" name="Default test" finished-at="2025-02-26T19:04:20 IST" duration-ms="23226">
+    <test started-at="2025-03-01T01:50:35 IST" name="Default test" finished-at="2025-03-01T01:55:14 IST" duration-ms="278996">
       <class name="com.kpi.testcases.RegistrationPageTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:03:57 IST" name="launchBrowser" finished-at="2025-02-26T19:04:02 IST" duration-ms="4671" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:50:35 IST" name="launchBrowser" finished-at="2025-03-01T01:50:45 IST" duration-ms="10614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="registrationPageLanding()[pri:1, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:02 IST" name="registrationPageLanding" finished-at="2025-02-26T19:04:07 IST" duration-ms="5630" status="PASS">
+        <test-method signature="registrationPageLanding()[pri:1, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:50:45 IST" name="registrationPageLanding" finished-at="2025-03-01T01:50:46 IST" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPageLanding -->
-        <test-method signature="lableRegistrationPagefield()[pri:2, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:07 IST" name="lableRegistrationPagefield" finished-at="2025-02-26T19:04:09 IST" duration-ms="1557" status="PASS">
+        <test-method signature="lableRegistrationPagefield()[pri:2, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:50:46 IST" name="lableRegistrationPagefield" finished-at="2025-03-01T01:50:46 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lableRegistrationPagefield -->
-        <test-method signature="addRegistrationWithoutData()[pri:3, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:09 IST" name="addRegistrationWithoutData" finished-at="2025-02-26T19:04:10 IST" duration-ms="1079" status="PASS">
+        <test-method signature="addRegistrationWithoutData()[pri:3, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:50:46 IST" name="addRegistrationWithoutData" finished-at="2025-03-01T01:50:46 IST" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addRegistrationWithoutData -->
-        <test-method signature="addBlankSpaceRegField()[pri:4, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:10 IST" name="addBlankSpaceRegField" finished-at="2025-02-26T19:04:10 IST" duration-ms="249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addBlankSpaceRegField -->
-        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:10 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:12 IST" duration-ms="1879" status="PASS">
+        <test-method signature="addBlankSpaceRegField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:50:46 IST" name="addBlankSpaceRegField" data-provider="registrationData" finished-at="2025-03-01T01:50:46 IST" duration-ms="429" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Nitesh Kumar]]>
+                <![CDATA[   ]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[nitesh123@yopmail.com]]>
+                <![CDATA[   ]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[3edc#EDC]]>
+                <![CDATA[    ]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[3edc#EDC]]>
+                <![CDATA[    ]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[9876543210]]>
+                <![CDATA[   ]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[otsSolution]]>
+                <![CDATA[   ]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[QA_SoftwareTesting]]>
+                <![CDATA[     ]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[india]]>
+                <![CDATA[   ]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignUp -->
-        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:12 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:14 IST" duration-ms="1625" status="PASS">
+        </test-method> <!-- addBlankSpaceRegField -->
+        <test-method signature="addBlankSpaceRegField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:50:46 IST" name="addBlankSpaceRegField" data-provider="registrationData" finished-at="2025-03-01T01:50:57 IST" duration-ms="10083" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Sharma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit.sharma@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TechCorp]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Automation_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='fullName']/following-sibling::div[@class='invalid-feedback']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//input[@id='fullName']/following-sibling::div[@class='invalid-feedback']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='fullName']/following-sibling::div[@class='invalid-feedback']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//input[@id='fullName']/following-sibling::div[@class='invalid-feedback']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at com.kpi.action.Actions.isElementvisibleTrue(Actions.java:36)
+at com.kpi.testcases.RegistrationPageTest.addBlankSpaceRegField(RegistrationPageTest.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBlankSpaceRegField -->
+        <test-method signature="btnNextWithoutFullName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:50:57 IST" name="btnNextWithoutFullName" data-provider="registrationData" finished-at="2025-03-01T01:51:06 IST" duration-ms="9057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutFullName -->
+        <test-method signature="btnNextWithoutFullName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:51:06 IST" name="btnNextWithoutFullName" data-provider="registrationData" finished-at="2025-03-01T01:51:16 IST" duration-ms="10517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,146 +276,1024 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignUp -->
-        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:14 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:15 IST" duration-ms="1523" status="PASS">
+        </test-method> <!-- btnNextWithoutFullName -->
+        <test-method signature="btnNextwithInvalidEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:51:16 IST" name="btnNextwithInvalidEmail" data-provider="registrationData" finished-at="2025-03-01T01:51:40 IST" duration-ms="23911" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Priya Verma]]>
+                <![CDATA[   ]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[priya.v@yopmail.com]]>
+                <![CDATA[   ]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Pass@9876]]>
+                <![CDATA[    ]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Pass@9876]]>
+                <![CDATA[    ]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[9123456789]]>
+                <![CDATA[   ]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[SoftEdge]]>
+                <![CDATA[   ]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Manual_Testing]]>
+                <![CDATA[     ]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Canada]]>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Enter a valid email address!')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//div[contains(text(),'Enter a valid email address!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Enter a valid email address!')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//div[contains(text(),'Enter a valid email address!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at com.kpi.action.Actions.isElementvisibleTrue(Actions.java:36)
+at com.kpi.testcases.RegistrationPageTest.btnNextwithInvalidEmail(RegistrationPageTest.java:133)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextwithInvalidEmail -->
+        <test-method signature="btnNextwithInvalidEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:51:40 IST" name="btnNextwithInvalidEmail" data-provider="registrationData" finished-at="2025-03-01T01:51:59 IST" duration-ms="19400" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Sharma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit.sharma@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TechCorp]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Automation_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Enter a valid email address!')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//div[contains(text(),'Enter a valid email address!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Enter a valid email address!')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//div[contains(text(),'Enter a valid email address!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at com.kpi.action.Actions.isElementvisibleTrue(Actions.java:36)
+at com.kpi.testcases.RegistrationPageTest.btnNextwithInvalidEmail(RegistrationPageTest.java:133)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextwithInvalidEmail -->
+        <test-method signature="btnNextWithoutEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:51:59 IST" name="btnNextWithoutEmail" data-provider="registrationData" finished-at="2025-03-01T01:52:07 IST" duration-ms="7883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[   ]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignUp -->
-        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:15 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:17 IST" duration-ms="1895" status="PASS">
+        </test-method> <!-- btnNextWithoutEmail -->
+        <test-method signature="btnNextWithoutEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:52:07 IST" name="btnNextWithoutEmail" data-provider="registrationData" finished-at="2025-03-01T01:52:25 IST" duration-ms="17949" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Rahul Singh]]>
+                <![CDATA[Amit Sharma]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[rahulsingh@yopmail.com]]>
+                <![CDATA[amit.sharma@yopmail.com]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Secure#456]]>
+                <![CDATA[Test@1234]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Secure#456]]>
+                <![CDATA[Test@1234]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[8765432109]]>
+                <![CDATA[9988776655]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[InfyTech]]>
+                <![CDATA[TechCorp]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[DevOps_Engineer]]>
+                <![CDATA[Automation_Testing]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[UK]]>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Email is required!')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//div[contains(text(),'Email is required!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Email is required!')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//div[contains(text(),'Email is required!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at com.kpi.action.Actions.isElementvisibleTrue(Actions.java:36)
+at com.kpi.testcases.RegistrationPageTest.btnNextWithoutEmail(RegistrationPageTest.java:149)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutEmail -->
+        <test-method signature="btnNextWithoutPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:52:25 IST" name="btnNextWithoutPass" data-provider="registrationData" finished-at="2025-03-01T01:52:41 IST" duration-ms="15283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[   ]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignUp -->
-        <test-method signature="SignUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:17 IST" name="SignUp" data-provider="registrationData" finished-at="2025-02-26T19:04:19 IST" duration-ms="1906" status="PASS">
+        </test-method> <!-- btnNextWithoutPass -->
+        <test-method signature="btnNextWithoutPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:52:41 IST" name="btnNextWithoutPass" data-provider="registrationData" finished-at="2025-03-01T01:52:52 IST" duration-ms="11712" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Sneha Mehta]]>
+                <![CDATA[Amit Sharma]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[sneha.m@yopmail.com]]>
+                <![CDATA[amit.sharma@yopmail.com]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[QATest@567]]>
+                <![CDATA[Test@1234]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[QATest@567]]>
+                <![CDATA[Test@1234]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[9654321987]]>
+                <![CDATA[9988776655]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[CodeSolutions]]>
+                <![CDATA[TechCorp]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Performance_Testing]]>
+                <![CDATA[Automation_Testing]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Australia]]>
+                <![CDATA[USA]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignUp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@23348b5d]" started-at="2025-02-26T19:04:19 IST" name="closeBrowser" finished-at="2025-02-26T19:04:20 IST" duration-ms="1027" status="PASS">
+        </test-method> <!-- btnNextWithoutPass -->
+        <test-method signature="btnNextWithoutConfPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:52:52 IST" name="btnNextWithoutConfPass" data-provider="registrationData" finished-at="2025-03-01T01:53:07 IST" duration-ms="14379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutConfPass -->
+        <test-method signature="btnNextWithoutConfPass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:53:07 IST" name="btnNextWithoutConfPass" data-provider="registrationData" finished-at="2025-03-01T01:53:19 IST" duration-ms="12488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Sharma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit.sharma@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TechCorp]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Automation_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutConfPass -->
+        <test-method signature="btnNextwithoutMobNum(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:53:19 IST" name="btnNextwithoutMobNum" data-provider="registrationData" finished-at="2025-03-01T01:53:40 IST" duration-ms="20434" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Mobile number is required!')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//div[contains(text(),'Mobile number is required!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Mobile number is required!')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [336af32fd6da837e21425aa07181067c, findElement {using=xpath, value=//div[contains(text(),'Mobile number is required!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/x_/l8488_l51ws...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52172/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 336af32fd6da837e21425aa07181067c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at com.kpi.action.Actions.isElementvisibleTrue(Actions.java:36)
+at com.kpi.testcases.RegistrationPageTest.btnNextwithoutMobNum(RegistrationPageTest.java:197)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextwithoutMobNum -->
+        <test-method signature="btnNextwithoutMobNum(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:53:40 IST" name="btnNextwithoutMobNum" data-provider="registrationData" finished-at="2025-03-01T01:53:50 IST" duration-ms="10506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Sharma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit.sharma@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TechCorp]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Automation_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextwithoutMobNum -->
+        <test-method signature="btnNextWithoutOrgName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:53:50 IST" name="btnNextWithoutOrgName" data-provider="registrationData" finished-at="2025-03-01T01:54:01 IST" duration-ms="10637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutOrgName -->
+        <test-method signature="btnNextWithoutOrgName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:54:01 IST" name="btnNextWithoutOrgName" data-provider="registrationData" finished-at="2025-03-01T01:54:14 IST" duration-ms="12963" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Sharma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit.sharma@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TechCorp]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Automation_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutOrgName -->
+        <test-method signature="btnNextWithoutJobTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:54:14 IST" name="btnNextWithoutJobTitle" data-provider="registrationData" finished-at="2025-03-01T01:54:32 IST" duration-ms="17904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutJobTitle -->
+        <test-method signature="btnNextWithoutJobTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:54:32 IST" name="btnNextWithoutJobTitle" data-provider="registrationData" finished-at="2025-03-01T01:54:45 IST" duration-ms="13753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Sharma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit.sharma@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TechCorp]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Automation_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutJobTitle -->
+        <test-method signature="btnNextWithoutCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:13, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:54:45 IST" name="btnNextWithoutCountry" data-provider="registrationData" finished-at="2025-03-01T01:55:02 IST" duration-ms="16774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutCountry -->
+        <test-method signature="btnNextWithoutCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:13, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:55:02 IST" name="btnNextWithoutCountry" data-provider="registrationData" finished-at="2025-03-01T01:55:14 IST" duration-ms="11598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Sharma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit.sharma@yopmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TechCorp]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Automation_Testing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btnNextWithoutCountry -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.kpi.testcases.RegistrationPageTest@1fa121e2]" started-at="2025-03-01T01:55:14 IST" name="closeBrowser" finished-at="2025-03-01T01:55:14 IST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
