@@ -1,8 +1,14 @@
 package com.kpi.action;
 
+import java.time.Duration;
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Actions {
 	
@@ -39,5 +45,25 @@ public class Actions {
 		}
 		return element.getText();
 	} 
-
+	
+	public void fluentWait(WebDriver driver, WebElement element)
+	{
+		Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(20))
+				.pollingEvery(Duration.ofSeconds(1)).ignoring(Exception.class);
+		try
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+		}
+		catch (Exception e)
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+			e.printStackTrace();
+		}
+	}
+	
+	public void explicitWait(WebDriver driver, WebElement element, int timeout)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
 }

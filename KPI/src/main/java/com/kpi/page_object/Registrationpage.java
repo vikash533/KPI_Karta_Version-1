@@ -1,9 +1,14 @@
 package com.kpi.page_object;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class Registrationpage {
 	WebDriver driver;
@@ -66,7 +71,7 @@ public class Registrationpage {
 	@FindBy(xpath = "(//div[contains(text(),'Password should contain at least 1 number, 1 lower')])[2]")
 	public WebElement lenghtMsgConfPassword;
 	
-	@FindBy(xpath = "//div[@class='ng-tns-c13-4 toast-message ng-star-inserted']")
+	@FindBy(xpath = "//div[@aria-label='Password and Confirm Password are not matching']")
 	public WebElement passwordMismatchAlert;
 	
 	@FindBy(xpath = "//label[@for ='mobile']")
@@ -88,7 +93,24 @@ public class Registrationpage {
 	public WebElement txtSearchPlaceholder;
 	
 	@FindBy(xpath ="//ul[@class='iti__country-list']/li")
-	public WebElement listCountry;
+	public WebElement listCountryl;
+	
+	By listCountry = By.xpath("//ul[@class='iti__country-list']/li");
+	
+	public List<WebElement> getListCountry()
+	{
+		  return driver.findElements(listCountry);
+	}
+	
+	public List<String> listCountryCode()
+	{
+		List<String> list = new ArrayList<>();
+		for (WebElement ele : getListCountry())
+		{
+			list.add(ele.getText());
+		}
+		return list;
+	}
 	
 	@FindBy(xpath ="//div[@class='iti__flag-box']")
 	public WebElement listCountryflag;
@@ -120,7 +142,7 @@ public class Registrationpage {
 	@FindBy(xpath = "//div[contains(text(),'Job title is required!')]")
 	public WebElement errMsgJobTitle;
 	
-	@FindBy(xpath ="//input[@id='job_title']/following-sibling::div[@class='invalid-feedback']")
+	@FindBy(xpath ="//input[@id='job_title']/following-sibling::div[@class='invalid-feedback']//div")
 	public WebElement blkErrorJobTitle;
 	
 	@FindBy(xpath = "//label[@for ='country']")
@@ -141,7 +163,7 @@ public class Registrationpage {
 	@FindBy(xpath ="(//p[@class='text-white'])[1]")
 	public WebElement lableBacktoLogin;
 	
-	@FindBy(linkText = "a[href='/login']")
+	@FindBy(xpath = "//strong[normalize-space()='login']")
 	public WebElement btnBacktoLogin;
 	
 	public WebDriver getDriver() {
@@ -340,13 +362,13 @@ public class Registrationpage {
 		this.txtSearchPlaceholder = txtSearchPlaceholder;
 	}
 
-	public WebElement getListCountry() {
-		return listCountry;
+	public WebElement getListCountryop() {
+		return listCountryl;
 	}
-
-	public void setListCountry(WebElement listCountry) {
-		this.listCountry = listCountry;
-	}
+//
+//	public void setListCountry(WebElement listCountry) {
+//		this.listCountry = listCountry;
+//	}
 
 	public WebElement getListCountryflag() {
 		return listCountryflag;
@@ -479,4 +501,219 @@ public class Registrationpage {
 	public void setBtnBacktoLogin(WebElement btnBacktoLogin) {
 		this.btnBacktoLogin = btnBacktoLogin;
 	}
+	
+	//Signup Verification Page
+	
+		@FindBy(xpath="//div[@class='login_form']//h2")
+		public WebElement signupVerificationTxt;
+		
+		@FindBy(xpath="//p[@class='text-white text-center mb-5']")
+		public WebElement txtVerificationLinkEmail;
+		
+		@FindBy(xpath="//div[@class='form-group']//label")
+		public WebElement lableVerificationCode;
+		
+		@FindBy(xpath="//div[@class='ng-star-inserted']")
+		public WebElement erMsgVerificationCodeRequired;
+		
+		@FindBy(id="code")
+		public WebElement inputTxtVerificationCode;
+		
+		@FindBy(xpath = "//a[normalize-space()='Resend Code']")
+		WebElement btnClickOnResend;
+		
+		@FindBy(xpath ="//span[@class='d-block text-white']")
+		public WebElement msgTxtCheckSpan;
+		
+		@FindBy(xpath = "//button[normalize-space()='Verify']")
+		WebElement btnClickOnVerify;
+		
+		@FindBy(xpath="//a[@class='text-white']")
+		WebElement btnBacktoLoginVerificationPage;
+		
+		@FindBy(xpath ="//div[@aria-label='Verification code resent successfully']")
+		WebElement alertSuccessResend;
+		
+		@FindBy(xpath ="//div[@class='ng-star-inserted']")
+		public WebElement errMsgInvalidCode;
+		
+		
+		@FindBy(xpath= "//div[@class='ng-tns-c13-2 toast-message ng-star-inserted']")
+		public WebElement errAlertInvalidCode;
+		
+		
+	public WebElement getsignupVerificationTxt() {
+		return signupVerificationTxt;
+	}
+	
+	public WebElement gettxtVerificationLinkEmail() {
+		return txtVerificationLinkEmail;
+	}	
+		
+	public WebElement getlableVerificationCode() {
+		return lableVerificationCode;
+	}
+	
+	public WebElement geterMsgVerificationCodeRequired() {
+		return erMsgVerificationCodeRequired;
+	}	
+	
+	public WebElement getbtnClickOnResend() {
+		return btnClickOnResend;
+	}	
+	
+	public WebElement getmsgTxtCheckSpan() {
+		return msgTxtCheckSpan;
+	}	
+	
+	public WebElement getbtnClickOnVerify() {
+		return btnClickOnVerify;
+	}	
+	
+	public void setinputTxtVerificationCode(WebElement inputTxtVerificationCode) {
+		this.inputTxtVerificationCode = inputTxtVerificationCode;
+	}	
+	
+	public WebElement getinputTxtVerificationCode() {
+		return inputTxtVerificationCode;
+	}	
+	
+	public WebElement getbtnBacktoLoginVerificationPage() {
+		return btnBacktoLoginVerificationPage;
+	}
+	
+	public WebElement getalertSuccessResend() {
+		return alertSuccessResend;
+	}
+	
+	public WebElement geterrMsgInvalidCode() {
+		return errMsgInvalidCode;
+	}
+		
+	public WebElement geterrAlertInvalidCode()	{
+		return errAlertInvalidCode;
+	}
+		
+//Select Plan
+	
+	@FindBy(xpath="//div[@aria-label='Email is verified successfully']")
+	public WebElement alertTxtEmailVerified;
+	
+	@FindBy(xpath = "//h4[normalize-space()='Select Creator License']")
+	WebElement msgCreatorLicense;
+	
+	@FindBy(xpath="//p[contains(text(),'(First 14 days free. No Credit Card required. Canc')]")
+	WebElement txtFreeTrial;
+	
+	@FindBy(xpath ="//div[normalize-space()='Create and edit Kartas']")
+	WebElement textPlandetailes1;
+	
+	@FindBy(xpath="//div[normalize-space()='Save Kartas, Branches, Measures, and Metrics for reuse']")
+	WebElement textplandetailes2;
+	
+	@FindBy(xpath="//div[normalize-space()='Share Elements (Kartas, Branches, Measures, and Metrics)']")
+	WebElement textplandetailes3;
+	
+	@FindBy(xpath ="//div[normalize-space()='Enter and edit KPI Targets and Actuals']")
+	WebElement textplandetailes4;
+	
+	@FindBy(xpath ="//div[@class='col-sm-6 pr-0']//button[@class='btn_sty_2'][normalize-space()='Select Plan']")
+	WebElement btnSelectPlanMonth;
+	
+	@FindBy(xpath ="//div[@class='col-sm-6 pl-0']//button[@class='btn_sty_2'][normalize-space()='Select Plan']")
+	WebElement btnSelectPlanYear;
+	
+	@FindBy(xpath="//div[@class='basic_plan']//h1[normalize-space()='$59/month']")
+	WebElement textLablePlanPriceMonthly;
+	
+	@FindBy(xpath="//div[@class='basic_plan']//h1[normalize-space()='$595/year']")
+	WebElement textLablePlanPriceYearly;
+	
+	@FindBy(linkText ="Login")
+	WebElement loginlink;
+	
+	@FindBy(xpath="//div[@class='head_logo']")
+	WebElement selectPlanLogo;
+	
+	public WebElement getalertTxtEmailVerified() {
+		return alertTxtEmailVerified;
+	}
+	
+	public WebElement getmsgCreatorLicense() {
+		return msgCreatorLicense;
+	}
+		
+	public WebElement gettxtFreeTrial() {
+		return txtFreeTrial;
+	}
+		
+	public WebElement gettextPlandetailes1() {
+		return textPlandetailes1;
+	}
+	
+	public WebElement gettextplandetailes2() {
+		return textplandetailes2;
+	}
+	
+	public WebElement gettextplandetailes3() {
+		return textplandetailes3;
+	}
+	
+	public WebElement gettextplandetailes4() {
+		return textplandetailes4;
+	}
+		
+	public WebElement getbtnSelectPlanMonth() {
+		return btnSelectPlanMonth;
+	}
+	
+	public WebElement getbtnSelectPlanYear() {
+		return btnSelectPlanYear;
+	}	
+	
+	public WebElement gettextLablePlanPriceMonthly() {
+		return textLablePlanPriceMonthly;
+	}
+	
+	public WebElement gettextLablePlanPriceYearly() {
+		return textLablePlanPriceYearly;
+	}
+	
+	public WebElement getloginlink() {
+		return loginlink;
+	}
+	
+	public WebElement getselectPlanLogo() {
+		return selectPlanLogo;
+	}
+	
+//ThankYouPage
+
+	@FindBy(xpath = "//h2[normalize-space()='THANK YOU!']")
+	WebElement txtMsgThankYouAfterPlan;
+	
+	@FindBy(xpath="//p[@class='text-white text-center mb-5']")
+	WebElement txtMsgActivatedPlan;
+	
+	@FindBy(xpath="//div[@class='logo']")
+	WebElement logoThankYouPage;
+	
+	@FindBy(xpath="//a[normalize-space()='LOGIN']")
+	WebElement btnLoginThankYouPage;
+	
+	public WebElement gettxtMsgThankYouAfterPlan() {
+		return txtMsgThankYouAfterPlan;
+	}
+		
+	public WebElement gettxtMsgActivatedPlan() {
+		return txtMsgActivatedPlan;
+	}
+	
+	public WebElement clkbtnLoginThankYouPage() {
+		return btnLoginThankYouPage;
+	}
+	
+	public WebElement logoThankYouPage() {
+		return logoThankYouPage;
+	}	
 }
