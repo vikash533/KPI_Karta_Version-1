@@ -3,6 +3,7 @@ package com.kpi.action;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -66,4 +67,12 @@ public class Actions {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
+	
+	public String returnErrorMessage(WebDriver driver,String domquery) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        return (String) js.executeScript("return "+domquery);
+	}
+	
+	
+	
 }

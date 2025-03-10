@@ -32,13 +32,6 @@
     <artifactId>testng</artifactId>
     <version>7.10.1</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/com.paulhammant/ngwebdriver -->
-<dependency>
-    <groupId>com.paulhammant</groupId>
-    <artifactId>ngwebdriver</artifactId>
-    <version>1.0</version>
-</dependency>
-
 
   </dependencies>
 

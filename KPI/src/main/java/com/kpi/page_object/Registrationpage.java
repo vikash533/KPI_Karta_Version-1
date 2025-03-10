@@ -32,7 +32,7 @@ public class Registrationpage {
 	@FindBy(xpath ="//input[@id='fullName']/following-sibling::div[@class='invalid-feedback']")
 	public WebElement blkErrorName;
 	
-	@FindBy(xpath = "//div[contains(text(),'Full name is required!')]")
+	@FindBy(xpath = "//input[@id='fullName']/following-sibling::div[contains(normalize-space(),'Full name is required!')]")
 	public WebElement errMsgNameFull;
 	
 	@FindBy(xpath = "//label[@for = 'email']")
