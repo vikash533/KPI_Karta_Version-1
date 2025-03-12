@@ -102,10 +102,8 @@ public class RegistrationPageTest extends BaseClass {
         switch (scenario) {
             case "blankData":
             	JavascriptExecutor js = (JavascriptExecutor) driver;
-//                String text1 = (String) js.executeScript("return document.querySelector(\"#fullName ~ div\").innerText");
-            	String text1=action.returnErrorMessage(driver," document.querySelector(\"#fullName ~ div\").innerText");
-                System.out.println("-----> text1 "+text1);
-                softAssert.assertEquals(text1, prop.getProperty("errorMsgFullName"), "Full name error is not matched");
+//              
+                softAssert.assertEquals((String)action.returnErrorMessage(driver," document.querySelector(\"#fullName ~ div\").innerText"), prop.getProperty("errorMsgFullName"), "Full name error is not matched");
                 
                 String text2 = (String) js.executeScript("return document.querySelector('#email~div').innerText");
                 System.out.println("-----> text2 "+text2);
@@ -134,52 +132,56 @@ public class RegistrationPageTest extends BaseClass {
                 softAssert.assertEquals(text8, prop.getProperty("errorMsgCountry"), "Country error is not matched");
                 break;
 
-            case "blankFullName":
-            	Thread.sleep(4000);
-            	JavascriptExecutor js1 = (JavascriptExecutor) driver;
-                String text11 = (String) js1.executeScript("return document.querySelector(\"#fullName ~ div\").innerText");
-                System.out.println("-----> text11 "+text11);
-            	softAssert.assertEquals(text11, prop.getProperty("blankfullNameError"), "Full name error is not matched");
-                break;
-
-            case "invalidEmail":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.geterrMsgInvalidEmail()), prop.getProperty("errorMsgInvalidEmail"), "Invalid email error is not matched");
-                break;
-
-            case "blankEmail":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgEmail()), prop.getProperty("errorMsgEmail"), "Email error is not matched");
-                break;
-
-            case "blankPassword":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgPassword()), prop.getProperty("errorMsgPassword"), "Password error is not matched");
-                break;
-
-            case "blankConfirmPassword":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgConfPassword()), prop.getProperty("errorMsgConfPassword"), "Confirm password error is not matched");
-                break;
-
-            case "blankMobileNumber":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgMobile()), prop.getProperty("errorMsgMobile"), "Mobile error is not matched");
-                break;
-
-            case "blankOrgName":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgOrg()), prop.getProperty("errorMsgOrg"), "Organization name error is not matched");
-                break;
-
-            case "blankJobTitle":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgJobTitle()), prop.getProperty("errorMsgJobTitle"), "Job title error is not matched");
-                break;
-
-            case "blankCountry":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgCountry()), prop.getProperty("errorMsgCountry"), "Country error is not matched");
-                break;
-
-            case "mismatchPassword":
-                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getPasswordMismatchAlert()), prop.getProperty("alertPasswordMismatch"), "Password mismatch error is not matched");
-                break;
-
-            case "validData":
-                softAssert.assertEquals(driver.getTitle(), prop.getProperty("signupverificationtitle"), "Signup verification title error is not matched");
+//            case "blankFullName":
+//            	Thread.sleep(4000);
+//            	JavascriptExecutor js1 = (JavascriptExecutor) driver;
+//                String text11 = (String) js1.executeScript("return document.querySelector(\"#fullName ~ div\").innerText");
+//                System.out.println("-----> text11 "+text11);
+//            	softAssert.assertEquals(text11, prop.getProperty("blankfullNameError"), "Full name error is not matched");
+//                break;
+//
+//            case "invalidEmail":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.geterrMsgInvalidEmail()), prop.getProperty("errorMsgInvalidEmail"), "Invalid email error is not matched");
+//                break;
+//
+//            case "blankEmail":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgEmail()), prop.getProperty("errorMsgEmail"), "Email error is not matched");
+//                break;
+//
+//            case "blankPassword":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgPassword()), prop.getProperty("errorMsgPassword"), "Password error is not matched");
+//                break;
+//
+//            case "blankConfirmPassword":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgConfPassword()), prop.getProperty("errorMsgConfPassword"), "Confirm password error is not matched");
+//                break;
+//
+//            case "blankMobileNumber":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgMobile()), prop.getProperty("errorMsgMobile"), "Mobile error is not matched");
+//                break;
+//
+//            case "blankOrgName":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgOrg()), prop.getProperty("errorMsgOrg"), "Organization name error is not matched");
+//                break;
+//
+//            case "blankJobTitle":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgJobTitle()), prop.getProperty("errorMsgJobTitle"), "Job title error is not matched");
+//                break;
+//
+//            case "blankCountry":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgCountry()), prop.getProperty("errorMsgCountry"), "Country error is not matched");
+//                break;
+//
+//            case "mismatchPassword":
+//                softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getPasswordMismatchAlert()), prop.getProperty("alertPasswordMismatch"), "Password mismatch error is not matched");
+//                break;
+//
+//            case "validData":
+//                softAssert.assertEquals(driver.getTitle(), prop.getProperty("signupverificationtitle"), "Signup verification title error is not matched");
+//                break;
+            default:
+                // Handle the case where the scenario does not match any of the cases
+                softAssert.fail("Scenario '" + scenario + "' is not recognized or implemented.");
                 break;
         }
 
