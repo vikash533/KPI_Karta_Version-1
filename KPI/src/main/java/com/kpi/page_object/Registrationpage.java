@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 public class Registrationpage {
 	WebDriver driver;
@@ -504,7 +503,7 @@ public class Registrationpage {
 	
 	//Signup Verification Page
 	
-		@FindBy(xpath="//div[@class='login_form']//h2")
+		@FindBy(xpath="//div[@class='login_form']//h2[@class='text-white text-center pb-2']")
 		public WebElement signupVerificationTxt;
 		
 		@FindBy(xpath="//p[@class='text-white text-center mb-5']")

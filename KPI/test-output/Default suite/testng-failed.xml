@@ -5,8 +5,11 @@
     <classes>
       <class name="com.kpi.testcases.RegistrationPageTest">
         <methods>
-          <include name="testRegistrationPage" invocation-numbers="0"/>
+          <include name="thankYouPageValidation"/>
+          <include name="testRegistrationPage" invocation-numbers="11"/>
+          <include name="verificationPageValidation"/>
           <include name="closeBrowser"/>
+          <include name="selectPlanValidation"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.kpi.testcases.RegistrationPageTest -->

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ASUS\AppData\Local\Temp\testng-eclipse--854787496\testng-customsuite.xml</span>
+                    <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">21 methods, 4 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="selectPlanValidation">selectPlanValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(validData, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automat...)">testRegistrationPage(validData, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automat...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="thankYouPageValidation">thankYouPageValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="verificationPageValidation">verificationPageValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +132,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="addRegistrationWithoutData">addRegistrationWithoutData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="lableRegistrationPagefield">lableRegistrationPagefield</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="mobileNoRp">mobileNoRp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -118,12 +157,62 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankFullName,   , amit.sharma@yopmail.com, Test@1234, Test@1234, 9988776655, TechCorp, Automation_T...)">testRegistrationPage(blankFullName,   , amit.sharma@yopmail.com, Test@1234, Test@1234, 9988776655, TechCorp, Automation_T...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="rpPasswordValidation">rpPasswordValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankData, , , , , , , , )">testRegistrationPage(blankData, , , , , , , , )</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(invalidEmail, Amit Sharma, amit.sharma, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testi...)">testRegistrationPage(invalidEmail, Amit Sharma, amit.sharma, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankEmail, Amit Sharma, , Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA)">testRegistrationPage(blankEmail, Amit Sharma, , Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankMobileNumber, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, , TechCorp, Automatio...)">testRegistrationPage(blankMobileNumber, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, , TechCorp, Automatio...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(mismatchPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@12347, 4242432445, TechCorp,...)">testRegistrationPage(mismatchPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@12347, 4242432445, TechCorp,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankOrgName, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, , Automation_T...)">testRegistrationPage(blankOrgName, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, , Automation_T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankData,   ,   ,   ,   ,   ,   ,   ,   )">testRegistrationPage(blankData,   ,   ,   ,   ,   ,   ,   ,   )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankJobTitle, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, , U...)">testRegistrationPage(blankJobTitle, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, , U...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankConfirmPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, , 4242432445, TechCorp, Autom...)">testRegistrationPage(blankConfirmPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, , 4242432445, TechCorp, Autom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankPassword, Amit Sharma, amit.sharma@yopmail.com, , Test@1234, 4242432445, TechCorp, Automation_T...)">testRegistrationPage(blankPassword, Amit Sharma, amit.sharma@yopmail.com, , Test@1234, 4242432445, TechCorp, Automation_T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankFullName, , amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Tes...)">testRegistrationPage(blankFullName, , amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Tes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpi.testcases.RegistrationPageTest" class="method navigator-link" hash-for-method="testRegistrationPage(blankCountry, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Auto...)">testRegistrationPage(blankCountry, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Auto...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -138,6 +227,176 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.kpi.testcases.RegistrationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectPlanValidation">
+                  </a> <!-- selectPlanValidation -->
+                  <span class="method-name">selectPlanValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.kpi.testcases.RegistrationPageTest.selectPlanValidation(RegistrationPageTest.java:279)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(validData, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automat...)">
+                  </a> <!-- testRegistrationPage(validData, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automat...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(validData,Amit Sharma,amit.sharma@yopmail.com,Test@1234,Test@1234,4242432445,TechCorp,Automation_Testing,USA)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.kpi.testcases.RegistrationPageTest.testRegistrationPage(RegistrationPageTest.java:228)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="thankYouPageValidation">
+                  </a> <!-- thankYouPageValidation -->
+                  <span class="method-name">thankYouPageValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta],
+	Thank You Title error is not matched expected [Thank you - KPI Karta] but found [Buy Subscription Package - KPI Karta]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.kpi.testcases.RegistrationPageTest.thankYouPageValidation(RegistrationPageTest.java:291)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verificationPageValidation">
+                  </a> <!-- verificationPageValidation -->
+                  <span class="method-name">verificationPageValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.kpi.testcases.RegistrationPageTest.verificationPageValidation(RegistrationPageTest.java:258)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -146,9 +405,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="addRegistrationWithoutData">
+                  </a> <!-- addRegistrationWithoutData -->
+                  <span class="method-name">addRegistrationWithoutData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="lableRegistrationPagefield">
                   </a> <!-- lableRegistrationPagefield -->
                   <span class="method-name">lableRegistrationPagefield</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mobileNoRp">
+                  </a> <!-- mobileNoRp -->
+                  <span class="method-name">mobileNoRp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -167,18 +440,97 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testRegistrationPage(blankFullName,   , amit.sharma@yopmail.com, Test@1234, Test@1234, 9988776655, TechCorp, Automation_T...)">
-                  </a> <!-- testRegistrationPage(blankFullName,   , amit.sharma@yopmail.com, Test@1234, Test@1234, 9988776655, TechCorp, Automation_T...) -->
-                  <span class="method-name">testRegistrationPage</span>
-                  <span class="parameters">(blankFullName,  ,amit.sharma@yopmail.com,Test@1234,Test@1234,9988776655,TechCorp,Automation_Testing,USA)</span>
+                  <a name="rpPasswordValidation">
+                  </a> <!-- rpPasswordValidation -->
+                  <span class="method-name">rpPasswordValidation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testRegistrationPage(blankData, , , , , , , , )">
-                  </a> <!-- testRegistrationPage(blankData, , , , , , , , ) -->
+                  <a name="testRegistrationPage(invalidEmail, Amit Sharma, amit.sharma, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testi...)">
+                  </a> <!-- testRegistrationPage(invalidEmail, Amit Sharma, amit.sharma, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testi...) -->
                   <span class="method-name">testRegistrationPage</span>
-                  <span class="parameters">(blankData,,,,,,,,)</span>
+                  <span class="parameters">(invalidEmail,Amit Sharma,amit.sharma,Test@1234,Test@1234,4242432445,TechCorp,Automation_Testing,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankEmail, Amit Sharma, , Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA)">
+                  </a> <!-- testRegistrationPage(blankEmail, Amit Sharma, , Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankEmail,Amit Sharma,,Test@1234,Test@1234,4242432445,TechCorp,Automation_Testing,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankMobileNumber, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, , TechCorp, Automatio...)">
+                  </a> <!-- testRegistrationPage(blankMobileNumber, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, , TechCorp, Automatio...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankMobileNumber,Amit Sharma,amit.sharma@yopmail.com,Test@1234,Test@1234,,TechCorp,Automation_Testing,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(mismatchPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@12347, 4242432445, TechCorp,...)">
+                  </a> <!-- testRegistrationPage(mismatchPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@12347, 4242432445, TechCorp,...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(mismatchPassword,Amit Sharma,amit.sharma@yopmail.com,Test@1234,Test@12347,4242432445,TechCorp,Automation_Testing,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankOrgName, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, , Automation_T...)">
+                  </a> <!-- testRegistrationPage(blankOrgName, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, , Automation_T...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankOrgName,Amit Sharma,amit.sharma@yopmail.com,Test@1234,Test@1234,4242432445,,Automation_Testing,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankData,   ,   ,   ,   ,   ,   ,   ,   )">
+                  </a> <!-- testRegistrationPage(blankData,   ,   ,   ,   ,   ,   ,   ,   ) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankData,  ,  ,  ,  ,  ,  ,  ,  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankJobTitle, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, , U...)">
+                  </a> <!-- testRegistrationPage(blankJobTitle, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, , U...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankJobTitle,Amit Sharma,amit.sharma@yopmail.com,Test@1234,Test@1234,4242432445,TechCorp,,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankConfirmPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, , 4242432445, TechCorp, Autom...)">
+                  </a> <!-- testRegistrationPage(blankConfirmPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, , 4242432445, TechCorp, Autom...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankConfirmPassword,Amit Sharma,amit.sharma@yopmail.com,Test@1234,,4242432445,TechCorp,Automation_Testing,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankPassword, Amit Sharma, amit.sharma@yopmail.com, , Test@1234, 4242432445, TechCorp, Automation_T...)">
+                  </a> <!-- testRegistrationPage(blankPassword, Amit Sharma, amit.sharma@yopmail.com, , Test@1234, 4242432445, TechCorp, Automation_T...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankPassword,Amit Sharma,amit.sharma@yopmail.com,,Test@1234,4242432445,TechCorp,Automation_Testing,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankFullName, , amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Tes...)">
+                  </a> <!-- testRegistrationPage(blankFullName, , amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Tes...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankFullName,,amit.sharma@yopmail.com,Test@1234,Test@1234,4242432445,TechCorp,Automation_Testing,USA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistrationPage(blankCountry, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Auto...)">
+                  </a> <!-- testRegistrationPage(blankCountry, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Auto...) -->
+                  <span class="method-name">testRegistrationPage</span>
+                  <span class="parameters">(blankCountry,Amit Sharma,amit.sharma@yopmail.com,Test@1234,Test@1234,4242432445,TechCorp,Automation_Testing,)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,7 +538,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ASUS\AppData\Local\Temp\testng-eclipse--854787496\testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/x_/l8488_l51ws1zxnh6p1l40_40000gn/T/testng-eclipse-1008731006/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -235,32 +587,96 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(21);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testRegistrationPage')
+data.setCell(0, 1, 'verificationPageValidation')
 data.setCell(0, 2, 'com.kpi.testcases.RegistrationPageTest')
-data.setCell(0, 3, 10966);
+data.setCell(0, 3, 23920);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testRegistrationPage')
 data.setCell(1, 2, 'com.kpi.testcases.RegistrationPageTest')
-data.setCell(1, 3, 7045);
+data.setCell(1, 3, 16854);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'lableRegistrationPagefield')
+data.setCell(2, 1, 'testRegistrationPage')
 data.setCell(2, 2, 'com.kpi.testcases.RegistrationPageTest')
-data.setCell(2, 3, 1880);
+data.setCell(2, 3, 13459);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'registrationPageBacktoLogin')
+data.setCell(3, 1, 'testRegistrationPage')
 data.setCell(3, 2, 'com.kpi.testcases.RegistrationPageTest')
-data.setCell(3, 3, 1297);
+data.setCell(3, 3, 11634);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'registrationPageLanding')
+data.setCell(4, 1, 'testRegistrationPage')
 data.setCell(4, 2, 'com.kpi.testcases.RegistrationPageTest')
-data.setCell(4, 3, 532);
+data.setCell(4, 3, 11312);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'registrationPageLanding')
+data.setCell(5, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(5, 3, 11060);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testRegistrationPage')
+data.setCell(6, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(6, 3, 10830);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'mobileNoRp')
+data.setCell(7, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(7, 3, 10701);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testRegistrationPage')
+data.setCell(8, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(8, 3, 10437);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testRegistrationPage')
+data.setCell(9, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(9, 3, 9966);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testRegistrationPage')
+data.setCell(10, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(10, 3, 9049);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testRegistrationPage')
+data.setCell(11, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(11, 3, 8400);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testRegistrationPage')
+data.setCell(12, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(12, 3, 8336);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testRegistrationPage')
+data.setCell(13, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(13, 3, 8155);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testRegistrationPage')
+data.setCell(14, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(14, 3, 7456);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'selectPlanValidation')
+data.setCell(15, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(15, 3, 1674);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'thankYouPageValidation')
+data.setCell(16, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(16, 3, 1355);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'rpPasswordValidation')
+data.setCell(17, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(17, 3, 601);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'lableRegistrationPagefield')
+data.setCell(18, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(18, 3, 224);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'addRegistrationWithoutData')
+data.setCell(19, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(19, 3, 194);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'registrationPageBacktoLogin')
+data.setCell(20, 2, 'com.kpi.testcases.RegistrationPageTest')
+data.setCell(20, 3, 93);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -293,27 +709,99 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">registrationPageLanding</span>
-                <span class="method-start">8472 ms</span>
+                <span class="method-start">2592 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">registrationPageBacktoLogin</span>
-                <span class="method-start">9074 ms</span>
+                <span class="method-start">13654 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">lableRegistrationPagefield</span>
-                <span class="method-start">10399 ms</span>
+                <span class="method-start">13748 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testRegistrationPage(blankData, , , , , , , , )</span>
-                <span class="method-start">12309 ms</span>
+                <span class="method-name">addRegistrationWithoutData</span>
+                <span class="method-start">13973 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testRegistrationPage(blankFullName,   , amit.sharma@yopmail.com, Test@1234, Test@1234, 9988776655, TechCorp, Automation_T...)</span>
-                <span class="method-start">19358 ms</span>
+                <span class="method-name">rpPasswordValidation</span>
+                <span class="method-start">14167 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mobileNoRp</span>
+                <span class="method-start">14769 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankData,   ,   ,   ,   ,   ,   ,   ,   )</span>
+                <span class="method-start">25480 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankFullName, , amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Tes...)</span>
+                <span class="method-start">42335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(invalidEmail, Amit Sharma, amit.sharma, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testi...)</span>
+                <span class="method-start">53165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankEmail, Amit Sharma, , Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA)</span>
+                <span class="method-start">63131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankPassword, Amit Sharma, amit.sharma@yopmail.com, , Test@1234, 4242432445, TechCorp, Automation_T...)</span>
+                <span class="method-start">73569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankConfirmPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, , 4242432445, TechCorp, Autom...)</span>
+                <span class="method-start">82618 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankMobileNumber, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, , TechCorp, Automatio...)</span>
+                <span class="method-start">90075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankOrgName, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, , Automation_T...)</span>
+                <span class="method-start">98230 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankJobTitle, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, , U...)</span>
+                <span class="method-start">106631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(blankCountry, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Auto...)</span>
+                <span class="method-start">117944 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistrationPage(mismatchPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@12347, 4242432445, TechCorp,...)</span>
+                <span class="method-start">131404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegistrationPage(validData, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automat...)</span>
+                <span class="method-start">143039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verificationPageValidation</span>
+                <span class="method-start">151377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">selectPlanValidation</span>
+                <span class="method-start">175298 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">thankYouPageValidation</span>
+                <span class="method-start">176974 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">30338 ms</span>
+                <span class="method-start">178330 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
