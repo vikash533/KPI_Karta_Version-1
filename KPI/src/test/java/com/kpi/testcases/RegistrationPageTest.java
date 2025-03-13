@@ -1,7 +1,6 @@
 package com.kpi.testcases;
 
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -136,18 +135,17 @@ public class RegistrationPageTest extends BaseClass {
 		registrationpage.getTxtMobile().clear();
 		registrationpage.getBtnCountryCode().click();
 		softAssert.assertEquals(registrationpage.getTxtSearchPlaceholder().getAttribute("placeholder"), prop.getProperty("lableCountryCodeSearchPh"), "Country code placeholder error not matched");
-		System.out.println(registrationpage.listCountryCode());
-		registrationpage.getListCountry().get(1).click();
+		System.out.println(registrationpage.listCountryCodeActual());
+		System.out.println(registrationpage.listCountryCodeActual().size());
+		registrationpage.getListCountry().get(11).click();
 		registrationpage.getBtnCountryCode().click();
-		registrationpage.getTxtSearchPlaceholder().sendKeys("Canada");
-//		if (registrationpage.listCountryCode().equals("Canada")) {
-//			registrationpage.getListCountry().get(1).click();
-//		}
-		softAssert.assertAll();	
+		registrationpage.getTxtSearchPlaceholder().sendKeys(prop.getProperty("countryCan"));
+		registrationpage.getcountrysearchclick().click();
+		softAssert.assertAll();
 	}
 	
 	@Test(priority=7,dataProvider = "registrationTestData", dataProviderClass = DataProviders.class)
-    public void testRegistrationPage(String scenario, String fullname, String email, String pass, String confirmPass, String num, String organizationName, String jobTitle, String country) throws InterruptedException{
+    public void testRegistrationPage(String scenario, String fullname, String email, String pass, String confirmPass, String num, String organizationName, String jobTitle, String country) {
         registrationpage = new Registrationpage(driver);
         driver.navigate().refresh();  
 
@@ -218,12 +216,13 @@ public class RegistrationPageTest extends BaseClass {
                 softAssert.assertEquals(action.returnErrorMessage(driver, rpSelectors.MISMATCH_PASSWORD_ALERT), prop.getProperty("alertPasswordMismatch"), "Job title error is not matched");
                 break;
 
-//            case "validData":
-//                softAssert.assertEquals((String)action.returnErrorMessage(driver, "document.querySelector('title').innerText"),prop.getProperty("signupverificationtitle"),"Signup verification Title error is not matched");
-//                break;
-//                
-//            default: softAssert.fail("Scenario '" + scenario + "' is not recognized or implemented.");
-//            break;    	 
+            case "validData":
+            	action.waitForTitle(driver, prop.getProperty("signupverificationtitle"));
+            	softAssert.assertEquals(driver.getTitle(), prop.getProperty("signupverificationtitle"), "Validation Page Title error is not matched");
+                break;
+                
+            default: softAssert.fail("Scenario '" + scenario + "' is not recognized or implemented.");
+            break;    	 
         }
         softAssert.assertAll();
     }
@@ -262,7 +261,8 @@ public class RegistrationPageTest extends BaseClass {
 	public void selectPlanValidation() {
 		action.fluentWait(driver, registrationpage.getalertTxtEmailVerified());
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getalertTxtEmailVerified()), prop.getProperty("textAlertEmailVerified"), "Alert Email Verified error is not matching");
-		softAssert.assertEquals((String)action.returnErrorMessage(driver, "document.querySelector('title').innerText") ,prop.getProperty("selectPlantitle"),"Select plan Title error is not matched");
+		action.waitForTitle(driver, prop.getProperty("selectPlantitle"));
+    	softAssert.assertEquals(driver.getTitle(), prop.getProperty("selectPlantitle"), "Select Plan Page Title error is not matched");
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getmsgCreatorLicense()), prop.getProperty("txtSelectCreator"), "Select Creator Plan Text error is not matching");
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.gettxtFreeTrial()), prop.getProperty("txtMSgFreeTrial"), "Free Trial text error is not matching");
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.gettextPlandetailes1()), prop.getProperty("txtplandetailes1"), "Plan Access detailes1 text error is not matching");
@@ -281,7 +281,8 @@ public class RegistrationPageTest extends BaseClass {
 	
 	@Test(priority=10)
 	public void thankYouPageValidation() {
-//		softAssert.assertEquals((String)action.returnErrorMessage(driver, "document.querySelector('title').innerText"),prop.getProperty("titleThankYouPage"),"Thank You Title error is not matched");
+		action.waitForTitle(driver, prop.getProperty("titleThankYouPage"));
+    	softAssert.assertEquals(driver.getTitle(), prop.getProperty("titleThankYouPage"), "Thank You Title error is not matched");
 		action.fluentWait(driver, registrationpage.gettxtMsgThankYouAfterPlan());
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.gettxtMsgThankYouAfterPlan()), prop.getProperty("textMsgThankYou"), "Thank You Text error is not matching");
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.gettxtMsgActivatedPlan()), prop.getProperty("textMsgActivatedPlan"), "Activated plan Text error is not matching");

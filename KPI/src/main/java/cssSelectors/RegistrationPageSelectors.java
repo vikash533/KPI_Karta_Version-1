@@ -41,4 +41,5 @@ public class RegistrationPageSelectors {
 
     // Mismatch Password Scenario
     public String MISMATCH_PASSWORD_ALERT = "document.querySelector(\"div[role='alert']\").innerText";
+    
 }

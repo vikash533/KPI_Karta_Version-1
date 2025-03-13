@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 12 23:33:50 IST 2025</td>
+<td>Started on:</td><td>Fri Mar 14 04:36:17 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>178 seconds (178483 ms)</td>
+<tr><td>Total time:</td><td>214 seconds (214246 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,289 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.kpi.testcases.RegistrationPageTest.verificationPageValidation()'><b>verificationPageValidation</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.kpi.testcases.RegistrationPageTest.verificationPageValidation(RegistrationPageTest.java:258)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1352254875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1352254875'><pre>java.lang.AssertionError: The following asserts failed:
-	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.kpi.testcases.RegistrationPageTest.verificationPageValidation(RegistrationPageTest.java:258)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>23</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-<tr>
-<td title='com.kpi.testcases.RegistrationPageTest.selectPlanValidation()'><b>selectPlanValidation</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.kpi.testcases.RegistrationPageTest.selectPlanValidation(RegistrationPageTest.java:279)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace37754966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace37754966'><pre>java.lang.AssertionError: The following asserts failed:
-	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.kpi.testcases.RegistrationPageTest.selectPlanValidation(RegistrationPageTest.java:279)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-<tr>
-<td title='com.kpi.testcases.RegistrationPageTest.thankYouPageValidation()'><b>thankYouPageValidation</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta],
-	Thank You Title error is not matched expected [Thank you - KPI Karta] but found [Buy Subscription Package - KPI Karta]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.kpi.testcases.RegistrationPageTest.thankYouPageValidation(RegistrationPageTest.java:291)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1177685146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1177685146'><pre>java.lang.AssertionError: The following asserts failed:
-	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta],
-	Thank You Title error is not matched expected [Thank you - KPI Karta] but found [Buy Subscription Package - KPI Karta]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.kpi.testcases.RegistrationPageTest.thankYouPageValidation(RegistrationPageTest.java:291)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-<tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: validData, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.kpi.testcases.RegistrationPageTest.testRegistrationPage(RegistrationPageTest.java:228)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace372261610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace372261610'><pre>java.lang.AssertionError: The following asserts failed:
-	Signup verification Title error is not matched expected [Verification - KPI Karta] but found [Register - KPI Karta]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.kpi.testcases.RegistrationPageTest.testRegistrationPage(RegistrationPageTest.java:228)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>8</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -359,39 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: invalidEmail, Amit Sharma, amit.sharma, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
-<td></td>
-<td>9</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-<tr>
 <td title='com.kpi.testcases.RegistrationPageTest.registrationPageLanding()'><b>registrationPageLanding</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
-<td></td>
-<td>11</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-<tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankEmail, Amit Sharma, , Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
 <td></td>
 <td>10</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 <tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankMobileNumber, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, , TechCorp, Automation_Testing, USA</td>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankFullName, , amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
 <td></td>
-<td>8</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-<tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: mismatchPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@12347, 4242432445, TechCorp, Automation_Testing, USA</td>
-<td></td>
-<td>11</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-<tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankOrgName, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, , Automation_Testing, USA</td>
-<td></td>
-<td>8</td>
-<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
-<tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankData,   ,   ,   ,   ,   ,   ,   ,   </td>
-<td></td>
-<td>16</td>
+<td>12</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 <tr>
 <td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankJobTitle, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, , USA</td>
@@ -399,14 +91,34 @@ function toggleAllBoxes() {
 <td>11</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 <tr>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankMobileNumber, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, , TechCorp, Automation_Testing, USA</td>
+<td></td>
+<td>13</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: validData, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
+<td></td>
+<td>12</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: mismatchPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@12347, 4242432445, TechCorp, Automation_Testing, USA</td>
+<td></td>
+<td>11</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
 <td title='com.kpi.testcases.RegistrationPageTest.mobileNoRp()'><b>mobileNoRp</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
 <td></td>
-<td>10</td>
+<td>23</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 <tr>
 <td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankConfirmPassword, Amit Sharma, amit.sharma@yopmail.com, Test@1234, , 4242432445, TechCorp, Automation_Testing, USA</td>
 <td></td>
-<td>7</td>
+<td>15</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
+<td title='com.kpi.testcases.RegistrationPageTest.verificationPageValidation()'><b>verificationPageValidation</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
+<td></td>
+<td>24</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 <tr>
 <td title='com.kpi.testcases.RegistrationPageTest.rpPasswordValidation()'><b>rpPasswordValidation</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
@@ -426,7 +138,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankPassword, Amit Sharma, amit.sharma@yopmail.com, , Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
 <td></td>
-<td>9</td>
+<td>11</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankData,   ,   ,   ,   ,   ,   ,   ,   </td>
+<td></td>
+<td>11</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
+<td title='com.kpi.testcases.RegistrationPageTest.selectPlanValidation()'><b>selectPlanValidation</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
+<td></td>
+<td>2</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 <tr>
 <td title='com.kpi.testcases.RegistrationPageTest.lableRegistrationPagefield()'><b>lableRegistrationPagefield</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
@@ -434,14 +156,29 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 <tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankFullName, , amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankCountry, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, </td>
 <td></td>
 <td>10</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 <tr>
-<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankCountry, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, </td>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: invalidEmail, Amit Sharma, amit.sharma, Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
 <td></td>
-<td>13</td>
+<td>10</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankEmail, Amit Sharma, , Test@1234, Test@1234, 4242432445, TechCorp, Automation_Testing, USA</td>
+<td></td>
+<td>14</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
+<td title='com.kpi.testcases.RegistrationPageTest.testRegistrationPage()'><b>testRegistrationPage</b><br>Test class: com.kpi.testcases.RegistrationPageTest<br>Parameters: blankOrgName, Amit Sharma, amit.sharma@yopmail.com, Test@1234, Test@1234, 4242432445, , Automation_Testing, USA</td>
+<td></td>
+<td>8</td>
+<td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
+<tr>
+<td title='com.kpi.testcases.RegistrationPageTest.thankYouPageValidation()'><b>thankYouPageValidation</b><br>Test class: com.kpi.testcases.RegistrationPageTest</td>
+<td></td>
+<td>1</td>
 <td>com.kpi.testcases.RegistrationPageTest@139982de</td></tr>
 </table><p>
 </body>

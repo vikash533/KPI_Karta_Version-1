@@ -28,9 +28,6 @@ public class Registrationpage {
 	@FindBy(id="fullName")
 	public WebElement txtFullname;
 	
-	@FindBy(xpath ="//input[@id='fullName']/following-sibling::div[@class='invalid-feedback']")
-	public WebElement blkErrorName;
-	
 	@FindBy(xpath = "//input[@id='fullName']/following-sibling::div[contains(normalize-space(),'Full name is required!')]")
 	public WebElement errMsgNameFull;
 	
@@ -42,9 +39,6 @@ public class Registrationpage {
 	
 	@FindBy(xpath = "//div[contains(text(),'Email is required!')]")
 	public WebElement errMsgEmail;
-	
-	@FindBy(xpath = "//div[contains(text(),'Enter a valid email address!')]")
-	public WebElement errMsgInvalidEmail;
 	
 	@FindBy(xpath = "//label[@for = 'password']")
 	public WebElement lablePassword;
@@ -66,9 +60,6 @@ public class Registrationpage {
 	
 	@FindBy(xpath = "//div[contains(text(),'Confirm password is required!')]")
 	public WebElement errMsgConfPassword;
-	
-	@FindBy(xpath = "(//div[contains(text(),'Password should contain at least 1 number, 1 lower')])[2]")
-	public WebElement lenghtMsgConfPassword;
 	
 	@FindBy(xpath = "//div[@aria-label='Password and Confirm Password are not matching']")
 	public WebElement passwordMismatchAlert;
@@ -101,7 +92,7 @@ public class Registrationpage {
 		  return driver.findElements(listCountry);
 	}
 	
-	public List<String> listCountryCode()
+	public List<String> listCountryCodeActual()
 	{
 		List<String> list = new ArrayList<>();
 		for (WebElement ele : getListCountry())
@@ -110,15 +101,6 @@ public class Registrationpage {
 		}
 		return list;
 	}
-	
-	@FindBy(xpath ="//div[@class='iti__flag-box']")
-	public WebElement listCountryflag;
-	
-	@FindBy(xpath = "//span[@class='iti__country-name']")
-	public WebElement listCountryName;
-	
-	@FindBy(xpath = "//span[@class='iti__dial-code']")
-	public WebElement listCountryCode;
 	
 	@FindBy(xpath = "//label[@for ='companyName']")
 	public WebElement lableOrg;
@@ -129,9 +111,6 @@ public class Registrationpage {
 	@FindBy(xpath = "//div[contains(text(),'Organization name is required!')]")
 	public WebElement errMsgOrg;
 	
-	@FindBy(xpath = "//input[@id='companyName']/following-sibling::div[@class='invalid-feedback']")
-	public WebElement blkErrorOrg;
-	
 	@FindBy(xpath = "//label[@for ='job_title']")
 	public WebElement lableJobTitle;
 	
@@ -140,10 +119,7 @@ public class Registrationpage {
 	
 	@FindBy(xpath = "//div[contains(text(),'Job title is required!')]")
 	public WebElement errMsgJobTitle;
-	
-	@FindBy(xpath ="//input[@id='job_title']/following-sibling::div[@class='invalid-feedback']//div")
-	public WebElement blkErrorJobTitle;
-	
+		
 	@FindBy(xpath = "//label[@for ='country']")
 	public WebElement lablecountry;
 	
@@ -153,8 +129,12 @@ public class Registrationpage {
 	@FindBy(xpath = "//div[contains(text(),'Country location is required!')]")
 	public WebElement errMsgCountry;
 	
-	@FindBy(xpath ="//input[@id='country']/following-sibling::div[@class='invalid-feedback']")
-	public WebElement blkErrorCountry;
+	@FindBy(xpath ="//ul/li/span[text()='Canada']")
+	public WebElement countrysearchclick;
+	
+	public WebElement getcountrysearchclick() {
+		return countrysearchclick;
+	}
 	
 	@FindBy(xpath = "//button[@class='btn btn-light btn_default mb-3 mt-5']")
 	public WebElement btnNext;
@@ -164,14 +144,7 @@ public class Registrationpage {
 	
 	@FindBy(xpath = "//strong[normalize-space()='login']")
 	public WebElement btnBacktoLogin;
-	
-	public WebDriver getDriver() {
-		return driver;
-	}
 
-	public void setDriver(WebDriver driver) {
-		this.driver = driver;
-	}
 
 	public WebElement getCreateAccoutButton() {
 		return createAccoutButton;
@@ -185,16 +158,8 @@ public class Registrationpage {
 		return lableSignup;
 	}
 
-	public void setLableSignup(WebElement lableSignup) {
-		this.lableSignup = lableSignup;
-	}
-
 	public WebElement getLableFullName() {
 		return lableFullName;
-	}
-
-	public void setLableFullName(WebElement lableFullName) {
-		this.lableFullName = lableFullName;
 	}
 
 	public WebElement getTxtFullname() {
@@ -205,140 +170,64 @@ public class Registrationpage {
 		return txtFullname;
 	}
 	
-	public WebElement getblkErrorName() {
-		return blkErrorName;
-	}
-
 	public WebElement getErrMsgNameFull() {
 		return errMsgNameFull;
-	}
-
-	public void setErrMsgNameFull(WebElement errMsgNameFull) {
-		this.errMsgNameFull = errMsgNameFull;
 	}
 
 	public WebElement getLableEmail() {
 		return lableEmail;
 	}
 
-	public void setLableEmail(WebElement lableEmail) {
-		this.lableEmail = lableEmail;
-	}
-
 	public WebElement getTxtEmail() {
 		return txtEmail;
-	}
-
-	public void setTxtEmail(WebElement txtEmail) {
-		this.txtEmail = txtEmail;
 	}
 
 	public WebElement getErrMsgEmail() {
 		return errMsgEmail;
 	}
 
-	public void setErrMsgEmail(WebElement errMsgEmail) {
-		this.errMsgEmail = errMsgEmail;
-	}
-	
-	public WebElement geterrMsgInvalidEmail() {
-		return errMsgInvalidEmail;
-	}
-
 	public WebElement getLablePassword() {
 		return lablePassword;
-	}
-
-	public void setLablePassword(WebElement lablePassword) {
-		this.lablePassword = lablePassword;
 	}
 
 	public WebElement getTxtPassword() {
 		return txtPassword;
 	}
 
-	public void setTxtPassword(WebElement txtPassword) {
-		this.txtPassword = txtPassword;
-	}
-
 	public WebElement getErrMsgPassword() {
 		return errMsgPassword;
-	}
-
-	public void setErrMsgPassword(WebElement errMsgPassword) {
-		this.errMsgPassword = errMsgPassword;
 	}
 
 	public WebElement getLenghtMsgPassword() {
 		return lenghtMsgPassword;
 	}
 
-	public void setLenghtMsgPassword(WebElement lenghtMsgPassword) {
-		this.lenghtMsgPassword = lenghtMsgPassword;
-	}
-
 	public WebElement getLableConfPassword() {
 		return lableConfPassword;
-	}
-
-	public void setLableConfPassword(WebElement lableConfPassword) {
-		this.lableConfPassword = lableConfPassword;
 	}
 
 	public WebElement getTxtConfPassword() {
 		return txtConfPassword;
 	}
 
-	public void setTxtConfPassword(WebElement txtConfPassword) {
-		this.txtConfPassword = txtConfPassword;
-	}
-
 	public WebElement getErrMsgConfPassword() {
 		return errMsgConfPassword;
-	}
-
-	public void setErrMsgConfPassword(WebElement errMsgConfPassword) {
-		this.errMsgConfPassword = errMsgConfPassword;
-	}
-
-	public WebElement getLenghtMsgConfPassword() {
-		return lenghtMsgConfPassword;
-	}
-
-	public void setLenghtMsgConfPassword(WebElement lenghtMsgConfPassword) {
-		this.lenghtMsgConfPassword = lenghtMsgConfPassword;
 	}
 
 	public WebElement getPasswordMismatchAlert() {
 		return passwordMismatchAlert;
 	}
 
-	public void setPasswordMismatchAlert(WebElement passwordMismatchAlert) {
-		this.passwordMismatchAlert = passwordMismatchAlert;
-	}
-
 	public WebElement getLableMobile() {
 		return lableMobile;
-	}
-
-	public void setLableMobile(WebElement lableMobile) {
-		this.lableMobile = lableMobile;
 	}
 
 	public WebElement getTxtMobile() {
 		return txtMobile;
 	}
 
-	public void setTxtMobile(WebElement txtMobile) {
-		this.txtMobile = txtMobile;
-	}
-
 	public WebElement getErrMsgMobile() {
 		return errMsgMobile;
-	}
-
-	public void setErrMsgMobile(WebElement errMsgMobile) {
-		this.errMsgMobile = errMsgMobile;
 	}
 	
 	public WebElement getErrMsgInvalidMob() {
@@ -349,156 +238,60 @@ public class Registrationpage {
 		return btnCountryCode;
 	}
 
-	public void setBtnCountryCode(WebElement btnCountryCode) {
-		this.btnCountryCode = btnCountryCode;
-	}
-
 	public WebElement getTxtSearchPlaceholder() {
 		return txtSearchPlaceholder;
 	}
 
-	public void setTxtSearchPlaceholder(WebElement txtSearchPlaceholder) {
-		this.txtSearchPlaceholder = txtSearchPlaceholder;
-	}
-
 	public WebElement getListCountryop() {
 		return listCountryl;
-	}
-//
-//	public void setListCountry(WebElement listCountry) {
-//		this.listCountry = listCountry;
-//	}
-
-	public WebElement getListCountryflag() {
-		return listCountryflag;
-	}
-
-	public void setListCountryflag(WebElement listCountryflag) {
-		this.listCountryflag = listCountryflag;
-	}
-
-	public WebElement getListCountryName() {
-		return listCountryName;
-	}
-
-	public void setListCountryName(WebElement listCountryName) {
-		this.listCountryName = listCountryName;
-	}
-
-	public WebElement getListCountryCode() {
-		return listCountryCode;
-	}
-
-	public void setListCountryCode(WebElement listCountryCode) {
-		this.listCountryCode = listCountryCode;
 	}
 
 	public WebElement getLableOrg() {
 		return lableOrg;
 	}
 
-	public void setLableOrg(WebElement lableOrg) {
-		this.lableOrg = lableOrg;
-	}
-
 	public WebElement getTxtOrgName() {
 		return txtOrgName;
-	}
-
-	public void setTxtOrgName(WebElement txtOrgName) {
-		this.txtOrgName = txtOrgName;
 	}
 
 	public WebElement getErrMsgOrg() {
 		return errMsgOrg;
 	}
 
-	public void setErrMsgOrg(WebElement errMsgOrg) {
-		this.errMsgOrg = errMsgOrg;
-	}
-
-	public WebElement getblkErrorOrg() {
-		return blkErrorOrg;
-	}
-	
 	public WebElement getLableJobTitle() {
 		return lableJobTitle;
-	}
-
-	public void setLableJobTitle(WebElement lableJobTitle) {
-		this.lableJobTitle = lableJobTitle;
 	}
 
 	public WebElement getTxtJobTitle() {
 		return txtJobTitle;
 	}
 
-	public void setTxtJobTitle(WebElement txtJobTitle) {
-		this.txtJobTitle = txtJobTitle;
-	}
-
 	public WebElement getErrMsgJobTitle() {
 		return errMsgJobTitle;
-	}
-
-	public void setErrMsgJobTitle(WebElement errMsgJobTitle) {
-		this.errMsgJobTitle = errMsgJobTitle;
-	}
-
-	public WebElement getblkErrorJobTitle() {
-		return blkErrorJobTitle;
 	}
 	
 	public WebElement getLablecountry() {
 		return lablecountry;
 	}
 
-	public void setLablecountry(WebElement lablecountry) {
-		this.lablecountry = lablecountry;
-	}
-
 	public WebElement getTxtCountry() {
 		return txtCountry;
-	}
-
-	public void setTxtCountry(WebElement txtCountry) {
-		this.txtCountry = txtCountry;
 	}
 
 	public WebElement getErrMsgCountry() {
 		return errMsgCountry;
 	}
 
-	public void setErrMsgCountry(WebElement errMsgCountry) {
-		this.errMsgCountry = errMsgCountry;
-	}
-	
-	public WebElement getblkErrorCountry() {
-		return blkErrorCountry;
-	}
-
 	public WebElement getBtnNext() {
 		return btnNext;
-	}
-
-	public void setBtnNext(WebElement btnNext) {
-		this.btnNext = btnNext;
 	}
 
 	public WebElement getLableBacktoLogin() {
 		return lableBacktoLogin;
 	}
 
-	public void setLableBacktoLogin(WebElement lableBacktoLogin) {
-		this.lableBacktoLogin = lableBacktoLogin;
-	}
-
 	public WebElement getBtnBacktoLogin() {
 		return btnBacktoLogin;
-	}
-
-	public void setBtnBacktoLogin(WebElement btnBacktoLogin) {
-		this.btnBacktoLogin = btnBacktoLogin;
 	}
 	
 	//Signup Verification Page
@@ -567,10 +360,6 @@ public class Registrationpage {
 	
 	public WebElement getbtnClickOnVerify() {
 		return btnClickOnVerify;
-	}	
-	
-	public void setinputTxtVerificationCode(WebElement inputTxtVerificationCode) {
-		this.inputTxtVerificationCode = inputTxtVerificationCode;
 	}	
 	
 	public WebElement getinputTxtVerificationCode() {
