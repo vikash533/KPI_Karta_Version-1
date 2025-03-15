@@ -129,7 +129,7 @@ public class RegistrationPageTest extends BaseClass {
 		action.clickOnElement(registrationpage.getBtnNext());
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgInvalidMob()), prop.getProperty("errorMsgInvalidMobile"), "Invalid Mobile error not matched");
 		registrationpage.getTxtMobile().clear();
-		registrationpage.getTxtMobile().sendKeys("646546576576");
+		registrationpage.getTxtMobile().sendKeys(action.randomeNumber()+action.randomeNumber());
 		action.clickOnElement(registrationpage.getBtnNext());
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getErrMsgInvalidMob()), prop.getProperty("errorMsgInvalidMobile"), "Invalid Mobile error not matched");
 		registrationpage.getTxtMobile().clear();
@@ -243,11 +243,11 @@ public class RegistrationPageTest extends BaseClass {
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getalertSuccessResend()), prop.getProperty("toastMsgResend"), "Verification Code Resent error is not Matching");
 		action.clickOnElement(registrationpage.getbtnClickOnVerify());
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.geterMsgVerificationCodeRequired()), prop.getProperty("errorMsgVerificationCodeRequired"), "Blank click code required error is not matching");
-		registrationpage.getinputTxtVerificationCode().sendKeys("abcdef");
+		registrationpage.getinputTxtVerificationCode().sendKeys(action.randomeString().toLowerCase());
 		action.fluentWait(driver, registrationpage.geterrMsgInvalidCode());
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.geterrMsgInvalidCode()), prop.getProperty("errorMsgInvalidCode"), "Error message invalid code is not matching");
 		registrationpage.getinputTxtVerificationCode().clear();
-		registrationpage.getinputTxtVerificationCode().sendKeys("676547");
+		registrationpage.getinputTxtVerificationCode().sendKeys(action.randomeNumber());
 		registrationpage.getbtnClickOnVerify().click();
 		action.fluentWait(driver, registrationpage.geterrAlertInvalidCode());
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.geterrAlertInvalidCode()), prop.getProperty("errorAlertInvalidCode"), "Toast alert invalid code error is not matching");
@@ -273,7 +273,7 @@ public class RegistrationPageTest extends BaseClass {
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.getbtnSelectPlanYear()), prop.getProperty("btnlabletxtSelectPlan"), "Label text Select Plan error is not matching");
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.gettextLablePlanPriceMonthly()), prop.getProperty("txtMonthlyPlan"), "Monthly plan text error is not matching");
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.gettextLablePlanPriceYearly()), prop.getProperty("txtYearlyPlan"), "Yealy plan text error is not matching");
-		registrationpage.getselectPlanLogo().isDisplayed();
+		System.out.println("Select Plan Logo: " + registrationpage.getselectPlanLogo().isDisplayed());
 		registrationpage.getloginlink().getAttribute("Login");
 		registrationpage.getbtnSelectPlanMonth().click();;
 		softAssert.assertAll();	
@@ -287,7 +287,7 @@ public class RegistrationPageTest extends BaseClass {
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.gettxtMsgThankYouAfterPlan()), prop.getProperty("textMsgThankYou"), "Thank You Text error is not matching");
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.gettxtMsgActivatedPlan()), prop.getProperty("textMsgActivatedPlan"), "Activated plan Text error is not matching");
 		softAssert.assertEquals(action.isElementvisibleTrue(registrationpage.clkbtnLoginThankYouPage()), prop.getProperty("btntextThankYouPage"), "Thank You page login Text error is not matching");
-		registrationpage.logoThankYouPage().isDisplayed();
+		System.out.println("Thank you Page Logo: " +registrationpage.logoThankYouPage().isDisplayed());
 		registrationpage.clkbtnLoginThankYouPage().click();
 		softAssert.assertAll();
 	}	

@@ -1,7 +1,12 @@
 package com.kpi.action;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Set;
+
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +16,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Actions {
+	WebDriver driver;
 	
 	public void clickOnElement(WebElement element) {
 		try {
@@ -62,13 +68,48 @@ public class Actions {
 	}
 	
 	public void waitForTitle(WebDriver driver, String expectedTitle) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
             wait.until(ExpectedConditions.titleIs(expectedTitle));
 	}
 	
 	public String returnErrorMessage(WebDriver driver,String domquery) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
         return (String) js.executeScript("return "+domquery);
+	}
+	
+//	public void getWindowsHandlesSwitch() {
+//		Set<String> winIDs = driver.getWindowHandles();
+//		List<String> windowList = new ArrayList(winIDs);
+//		String parentID = windowList.get(0);
+//		String childID = windowList.get(1);
+//		driver.switchTo().window(childID);
+//		driver.getTitle();
+//		driver.switchTo().window(parentID);	
+//	}
+	
+	public String randomeString() {
+		String generatedString = RandomStringUtils.randomAlphabetic(5);
+		return (generatedString);
+	}
+
+	public String randomeNumber() {
+		String generatedString2 = RandomStringUtils.randomNumeric(10);
+		return (generatedString2);
+	}
+	
+	public String randomAlphaNumeric() {
+		String st = RandomStringUtils.randomAlphabetic(4);
+		String num = RandomStringUtils.randomNumeric(3);
+		
+		return (st+"@"+num);
+	}
+	
+	public String randomEmail() {
+		String st = RandomStringUtils.randomAlphabetic(4);
+		String num = RandomStringUtils.randomNumeric(3);
+		
+		return (st+ num +"@yopmail.com");
+		
 	}
 
 	}
