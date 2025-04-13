@@ -78,23 +78,24 @@ public class Actions extends BaseClass {
         return (String) js.executeScript("return "+ domquery);
 	}
 	
-	public void switchtoChild(WebDriver driver) {
-		Set<String> winIDs = driver.getWindowHandles();
-		Iterator<String> winditr = winIDs.iterator();
-		@SuppressWarnings("unused")
-		String parentID = winditr.next();
-		String childID =  winditr.next();
-		driver.switchTo().window(childID);
-	}
-	
-	public void switchtoParent(WebDriver driver) {
+    public void switchWindow(WebDriver driver, String windowType, String expectedTitle) {
 		Set<String> winIDs = driver.getWindowHandles();
 		Iterator<String> winditr = winIDs.iterator();
 		String parentID = winditr.next();
-		@SuppressWarnings("unused")
 		String childID =  winditr.next();
-		driver.switchTo().window(parentID);
-	}
+
+        switch (windowType) {
+            case "parent":
+                 driver.switchTo().window(parentID);
+                 waitForTitle(driver, expectedTitle);
+                break;
+
+            case "child":
+                driver.switchTo().window(childID);
+                waitForTitle(driver, expectedTitle);
+                break;
+        }
+    }
 	
 	public String randomeString() {
 		String generatedString = RandomStringUtils.randomAlphabetic(5);

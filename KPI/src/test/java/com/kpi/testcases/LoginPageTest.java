@@ -53,12 +53,10 @@ public class LoginPageTest extends BaseClass {
 	public void loginPagebuttonclk() {
 		lp =new LoginPage(driver);
 		lp.clkbuttonLogo();
-		action.switchtoChild(driver);
-		action.waitForTitle(driver, prop.getProperty("logoclickpagetitle"));
+		action.switchWindow(driver, "child", prop.getProperty("logoclickpagetitle"));
 		softAssert.assertEquals(driver.getTitle(), prop.getProperty("logoclickpagetitle"), "Logo Click Page Title error is not matched");
 
-		action.switchtoParent(driver);
-		action.waitForTitle(driver, prop.getProperty("loginPageTitle"));
+		action.switchWindow(driver, "parent", prop.getProperty("loginPageTitle"));
 		softAssert.assertEquals(driver.getTitle(), prop.getProperty("loginPageTitle"));
 		
 		lp.clkbtnCreateAccount();
@@ -67,8 +65,9 @@ public class LoginPageTest extends BaseClass {
 		driver.navigate().back();
 		lp.clkbtnForgotPassword();
 		action.waitForTitle(driver, prop.getProperty("forgotPageTitle"));
-		softAssert.assertEquals(driver.getTitle(), prop.getProperty(""), "Forgot Password Page Title error is not matched");
-		driver.navigate().back();	
+		softAssert.assertEquals(driver.getTitle(), prop.getProperty("forgotPageTitle"), "Forgot Password Page Title error is not matched");
+		driver.navigate().back();
+		softAssert.assertAll();
 	}
 	
 	@Test(priority=3, enabled =true)
@@ -83,5 +82,6 @@ public class LoginPageTest extends BaseClass {
 			lp.clickLogin();
 			action.waitForTitle(driver, prop.getProperty("homePageTitle"));
 			softAssert.assertEquals(driver.getTitle(), prop.getProperty("homePageTitle"), "Home Page Title error is not matched");
+			softAssert.assertAll();
 	}
 }

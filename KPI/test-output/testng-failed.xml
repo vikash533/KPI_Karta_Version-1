@@ -5,6 +5,7 @@
     <classes>
       <class name="com.kpi.testcases.LoginPageTest">
         <methods>
+          <include name="test_Login"/>
           <include name="launchBrowser"/>
           <include name="loginPagebuttonclk"/>
           <include name="closeBrowser"/>
