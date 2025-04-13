@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.kpi.testcases.ForgotPasswordTest">
+      <class name="com.kpi.testcases.LoginPageTest">
         <methods>
-          <include name="unregisteredValidation"/>
-          <include name="closeBrowser"/>
           <include name="launchBrowser"/>
+          <include name="loginPagebuttonclk"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.kpi.testcases.ForgotPasswordTest -->
+      </class> <!-- com.kpi.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

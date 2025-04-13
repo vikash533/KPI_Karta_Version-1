@@ -1,8 +1,7 @@
 package com.kpi.action;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
@@ -15,9 +14,11 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Actions {
+import com.kpi.base.BaseClass;
+
+public class Actions extends BaseClass {
 	WebDriver driver;
-	
+	   
 	public void clickOnElement(WebElement element) {
 		try {
 			element.click();
@@ -74,18 +75,26 @@ public class Actions {
 	
 	public String returnErrorMessage(WebDriver driver,String domquery) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-        return (String) js.executeScript("return "+domquery);
+        return (String) js.executeScript("return "+ domquery);
 	}
 	
-//	public void getWindowsHandlesSwitch() {
-//		Set<String> winIDs = driver.getWindowHandles();
-//		List<String> windowList = new ArrayList(winIDs);
-//		String parentID = windowList.get(0);
-//		String childID = windowList.get(1);
-//		driver.switchTo().window(childID);
-//		driver.getTitle();
-//		driver.switchTo().window(parentID);	
-//	}
+	public void switchtoChild(WebDriver driver) {
+		Set<String> winIDs = driver.getWindowHandles();
+		Iterator<String> winditr = winIDs.iterator();
+		@SuppressWarnings("unused")
+		String parentID = winditr.next();
+		String childID =  winditr.next();
+		driver.switchTo().window(childID);
+	}
+	
+	public void switchtoParent(WebDriver driver) {
+		Set<String> winIDs = driver.getWindowHandles();
+		Iterator<String> winditr = winIDs.iterator();
+		String parentID = winditr.next();
+		@SuppressWarnings("unused")
+		String childID =  winditr.next();
+		driver.switchTo().window(parentID);
+	}
 	
 	public String randomeString() {
 		String generatedString = RandomStringUtils.randomAlphabetic(5);
@@ -112,4 +121,4 @@ public class Actions {
 		
 	}
 
-	}
+}

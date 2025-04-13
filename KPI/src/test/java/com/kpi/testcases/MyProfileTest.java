@@ -45,7 +45,7 @@ public class MyProfileTest extends BaseClass {
 		lp.clickLogin();
 		action.clickOnElement(mpp.clickNavigation());
 		mpp.btnMyProfile.click();
-		Assert.assertEquals(driver.getTitle(), prop.getProperty("mypRofileTitle"), "My Profile Title not matching - Test Failed");
+		Assert.assertEquals(driver.getTitle(), prop.getProperty("myProfileTitle"), "My Profile Title not matching - Test Failed");
 		
 	}
 

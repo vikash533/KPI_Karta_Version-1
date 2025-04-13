@@ -33,7 +33,7 @@ public class LoginPageTest extends BaseClass {
 		driver.quit();
 	}	
 	
-	@Test(priority=1)
+	@Test(priority=1, enabled =true)
 	public void lablefieldLogin() {
 		lp =new LoginPage(driver);
 		action.waitForTitle(driver, prop.getProperty("loginPageTitle"));
@@ -49,12 +49,18 @@ public class LoginPageTest extends BaseClass {
 		softAssert.assertAll();
 	}
 	
-	@Test (priority=2)
+	@Test (priority=2, enabled =true)
 	public void loginPagebuttonclk() {
 		lp =new LoginPage(driver);
-//		lp.clkbuttonLogo();
-//		action.waitForTitle(driver, prop.getProperty("logoclickpagetitle"));
-//		softAssert.assertEquals(driver.getTitle(), prop.getProperty("logoclickpagetitle"), "Logo Click Page Title error is not matched");          
+		lp.clkbuttonLogo();
+		action.switchtoChild(driver);
+		action.waitForTitle(driver, prop.getProperty("logoclickpagetitle"));
+		softAssert.assertEquals(driver.getTitle(), prop.getProperty("logoclickpagetitle"), "Logo Click Page Title error is not matched");
+
+		action.switchtoParent(driver);
+		action.waitForTitle(driver, prop.getProperty("loginPageTitle"));
+		softAssert.assertEquals(driver.getTitle(), prop.getProperty("loginPageTitle"));
+		
 		lp.clkbtnCreateAccount();
 		action.waitForTitle(driver, prop.getProperty("signupPageTitle"));
 		softAssert.assertEquals(driver.getTitle(), prop.getProperty("signupPageTitle"), "Create Account Page Title error is not matched");
